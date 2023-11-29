@@ -4,9 +4,9 @@ import os
 
 
 # Load the all of the data
-def load_data(ir_datasets_link, num_batch=15, num_docs_limit=75000):
+def load_data(ir_datasets_link, num_batch=20, num_docs_limit=-1):
 
-    print("\n===== Start Loading Data =====")
+    print("\n===== Start Loading Data =====\n")
     # Dataset and splitting
     dataset = ir_datasets.load(ir_datasets_link)
     docs = dataset.docs_iter()          # Docs
@@ -27,36 +27,37 @@ def load_docs(docs_data, docs_batches, docs_limit):
     limit = docs_limit
     empty_counter = 0
 
-    print("\nloading docs...")
+    print("loading docs...")
 
-    while limit_counter <= limit :
+    for doc in docs_data:
 
-        for doc in docs_data:
-            
-            # Batch foldering
-            batch_id = batch_count % docs_batches
-            batch_dir = f'collections/{batch_id}'
+        if limit_counter == limit:
+            break
+        
+        # Batch foldering
+        batch_id = batch_count % docs_batches
+        batch_dir = f'collections/{batch_id}'
 
-            # Create the batch directory if it doesn't already exist
-            if not os.path.exists(batch_dir):
-                os.makedirs(batch_dir)
+        # Create the batch directory if it doesn't already exist
+        if not os.path.exists(batch_dir):
+            os.makedirs(batch_dir)
 
-            # Write to each docs
-            if (doc.text):
-                with open(f'{batch_dir}/{doc.doc_id}.txt', 'w', encoding="utf-8") as f:
-                    f.write(doc.text)
-            else:
-                empty_counter += 1
-            
-            batch_count += 1
-            limit_counter += 1
+        # Write to each docs
+        if (doc.text):
+            with open(f'{batch_dir}/{doc.doc_id}.txt', 'w', encoding="utf-8") as f:
+                f.write(doc.text)
+        else:
+            empty_counter += 1
+        
+        batch_count += 1
+        limit_counter += 1
 
-    print("empty docs:", empty_counter, "out of", docs_limit)
+    print("empty docs:", empty_counter, "out of", limit_counter)
     print("loading docs has done\n")
 
 # Load the queries file
 def load_queries(query_data) :
-    print("\nloading queries...")
+    print("loading queries...")
     with open('queries.txt', 'w', encoding="utf-8") as f:
         for query in query_data:
             f.write(f"{query.query_id} {query.text}\n")
@@ -64,7 +65,7 @@ def load_queries(query_data) :
 
 # Load the qrels file
 def load_qrels(qrel_data):
-    print("\nloading qrels...")
+    print("loading qrels...")
     with open('qrels.txt', 'w', encoding="utf-8") as f:
         for qrel in qrel_data:
             f.write(f"{qrel.query_id} {qrel.doc_id} {qrel.relevance}\n")
@@ -81,4 +82,6 @@ def print_queries(query_data):
 
 if __name__ == "__main__":
     
-    load_data('beir/trec-covid', 20, 100000)
+    data_link = 'beir/trec-covid'
+    # data_link = 'cord19/trec-covid'
+    load_data(ir_datasets_link=data_link)
