@@ -4,7 +4,7 @@ import os
 
 
 # Load the all of the data
-def load_data(ir_datasets_link):
+def load_data(ir_datasets_link, num_batch=15, num_docs_limit=75000):
 
     print("\n===== Start Loading Data =====")
     # Dataset and splitting
@@ -13,7 +13,7 @@ def load_data(ir_datasets_link):
     queries = dataset.queries_iter()    # Queries
     qrels = dataset.qrels_iter()        # Qrels
 
-    load_docs(docs, 20, 100000)
+    load_docs(docs, num_batch, num_docs_limit)
     load_queries(queries)
     load_qrels(qrels)
 
@@ -81,16 +81,4 @@ def print_queries(query_data):
 
 if __name__ == "__main__":
     
-    load_data('beir/trec-covid')
-
-    # dataset = ir_datasets.load('beir/trec-covid')
-    # docs = dataset.docs_iter()          # Docs
-    
-    # for doc in docs:
-    #     if (str(doc.doc_id) == "0a8sp3iz"):
-    #         print("ada, isinya:")
-    #         if (doc.text):
-    #             print(doc.text)
-    #         else:
-    #             print("kosong ternyata")
-    #         print("=======")
+    load_data('beir/trec-covid', 20, 100000)
