@@ -1,0 +1,1 @@
+It is observed that some OpenMath objects may benefit from containing comments. A content dictionary with suitable attribution symbols is proposed. This content dictionary also provides application symbols for constructing comments that are somewhat more than just plain text strings.

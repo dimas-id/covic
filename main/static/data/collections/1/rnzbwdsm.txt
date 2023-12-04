@@ -1,0 +1,1 @@
+This report presents a novel approach to estimate the number of COVID-19 cases, including undocumented infections, in the US, by combining CDC's influenza-like illness surveillance data with aggregated prescription data. We estimated that the cumulative number of COVID-19 cases in the US by April 4 was above 2.5 million.

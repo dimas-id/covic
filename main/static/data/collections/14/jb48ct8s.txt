@@ -1,0 +1,1 @@
+We present the first formal verification of approximation algorithms for NP-complete optimization problems: vertex cover, independent set, load balancing, and bin packing. We uncover incompletenesses in existing proofs and improve the approximation ratio in one case.

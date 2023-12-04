@@ -1,0 +1,1 @@
+An international cooperative research project on intelligence and security informatics (ISI) was initialized in 2005 with funding support by the Chinese Academy of Sciences. This abstract summarizes an ongoing study on ISI data analysis using evolutionary computation methods, conducted by the Chinese team of this international project.

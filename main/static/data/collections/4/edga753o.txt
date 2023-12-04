@@ -1,0 +1,1 @@
+We report the genome sequence of a severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) isolate obtained from a patient with symptoms of coronavirus disease 2019 (COVID-19) who was infected in Cali, Colombia. The patient had no recent travel record and did not require hospitalization. The virus genome was obtained using Oxford Nanopore MinION sequencing.

@@ -1,0 +1,1 @@
+In this note, we describe simple generalizations of the basic SIR model for epidemic, in case of a multi-region scenario, to be used for predicting the COVID-19 epidemic spread in Italy.

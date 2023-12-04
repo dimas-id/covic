@@ -1,0 +1,1 @@
+Qwant Image Similarity Search (QISS) is a multi-lingual image similarity search engine based on a dual path neural networks that embed texts and images into a common feature space where they are easily comparable. Our demonstrator, available at http://research.qwant.com/images, allows real-time searches in a database of approximately 100 million images.

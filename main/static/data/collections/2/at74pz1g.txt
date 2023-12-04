@@ -1,0 +1,1 @@
+A potential pseudoknot was found in the 3' untranslated region of the bovine coronavirus genome beginning 63 nt downstream from the stop codon of the N gene. Mutation analysis of the pseudoknot in a cloned defective interfering RNA indicated that this structural element is necessary for defective interfering RNA replication.

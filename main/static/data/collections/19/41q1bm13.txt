@@ -1,0 +1,1 @@
+Deterministic mathematical models (called Compartmental models) of disease propagation such as the SIR model and its variants (MSIR, Carrier state, SEIR, SEIS, MSEIR, MSEIRS models) are used to study the propagation of COVID19 in a large population with specific reference to India.

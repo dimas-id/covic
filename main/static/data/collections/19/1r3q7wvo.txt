@@ -1,0 +1,1 @@
+The Coronavirus Infectious Disease Ontology (CIDO) is a community-based ontology that supports coronavirus disease knowledge and data standardization, integration, sharing, and analysis.

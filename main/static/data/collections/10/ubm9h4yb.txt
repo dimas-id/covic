@@ -1,0 +1,1 @@
+We present a parsimonious stochastic model for valuation of options on the fraction of infected individuals during an epidemic. The underlying stochastic dynamical system is a stochastic differential version of the SIR model of mathematical epidemiology.

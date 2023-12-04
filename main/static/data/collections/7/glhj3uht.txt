@@ -1,0 +1,1 @@
+This paper points some mistakes of three algorithms of updating the reduct in fuzzy [Formula: see text]-covering via matrix approaches while adding and deleting some objects of the universe, and gives corrections of these mistakes. Moreover, we study the reduct of a fuzzy [Formula: see text]-covering while adding and deleting objects further.

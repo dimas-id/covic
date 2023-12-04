@@ -1,0 +1,1 @@
+In a large Israeli dataset of 14 520 individuals tested for SARS-CoV-2, angiotension-converting enzyme inhibitors and angiotensin-receptor blockers were not found to be associated with increased SARS-CoV-2 infection after adjusting for major confounders. Patients on these medications should not stop their medication prophylactically.

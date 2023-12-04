@@ -1,0 +1,1 @@
+Abstract: In a multicenter cohort of 22,315 patients tested for COVID-19, 1676 (7.5%) had repeat testing via real-time PCR following an initial negative test. Of those retested within seven days of their first negative test, only 2.0% had a positive result. This suggests that repeat testing from the same source is unlikely to provide additional information.

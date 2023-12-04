@@ -1,0 +1,1 @@
+Using data for 20,912 patients from two large academic health systems, we analyzed the frequency of SARS-CoV-2 RT-PCR test-discordance among individuals initially testing negative by nasopharyngeal swab who were retested on clinical grounds within 7 days. The frequency of subsequent positivity within this window was 3.5% and similar across institutions.

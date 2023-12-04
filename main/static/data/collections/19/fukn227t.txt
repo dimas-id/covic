@@ -1,0 +1,1 @@
+An impact of viral mutations on the extent of an epidemic is examined. A mechanism of immunization of the population via spread of weakly mutated strain as a natural factor terminating the epidemic is indicated. An epidemic model which details this mechanism is proposed.

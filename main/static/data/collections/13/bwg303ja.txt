@@ -1,0 +1,1 @@
+In this paper, we prove the almost sure convergences for the maximum and minimum of nonstationary and stationary standardized normal vector sequences under some suitable conditions.

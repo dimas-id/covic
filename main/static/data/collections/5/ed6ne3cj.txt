@@ -1,0 +1,1 @@
+GST pull-down assays were used to characterize the SARS-CoV membrane (M) and nucleocapsid (N) interaction, and it was found that the amino acids 211-254 of N protein were essential for this interaction. When tetrad glutamines (Q) were replaced with glutamic acids (E) at positions of 240-243 of the N protein, the interaction was disrupted.

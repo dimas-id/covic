@@ -1,0 +1,1 @@
+A notion of implied susceptible population size is introduced in the context of the SIR differential equations in Epidemiology. This notion is applied to the analysis and projection of Covid19 2020, illustrated on the data of Germany, Israel and USA.

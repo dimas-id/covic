@@ -1,0 +1,1 @@
+John Brownstein and colleagues discuss HealthMap, an automated real-time system that monitors and disseminates online information about emerging infectious diseases.

@@ -1,0 +1,1 @@
+With a modified circuit, it is feasible to ventilate two patients with one ventilator over a relevant range of compliances. Adding inspiratory resistance allows individual titration of tidal volume, and incorporating one-way valves prevents pendelluft. https://bit.ly/3ex8SYP

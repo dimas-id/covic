@@ -1,0 +1,1 @@
+Linkage-specific DUBs employ different mechanisms to recognize and cleave polyubiquitin chains of specific linkage types. In this issue of Cell Chemical Biology, Flierman et al. (2016) develop a new family of novel non-hydrolyzable diubiquitin probes that will be valuable tools to study how DUBs achieve specificity.

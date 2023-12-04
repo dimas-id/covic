@@ -1,0 +1,1 @@
+We study distributions of a general reduced-order dependence measure and apply the results to conditional independence testing and feature selection. Experiments with Bayesian Networks indicate that using the introduced test in the Grow and Shrink algorithm instead of Conditional Mutual Information yields promising results for Markov Blanket discovery in terms of F measure.

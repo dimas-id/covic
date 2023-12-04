@@ -1,0 +1,1 @@
+This regularly updated survey provides an overview of public resources that offer medical images and metadata of COVID-19 cases. The purpose of this survey is to simplify the access to open COVID-19 image data resources for all scientists currently working on the coronavirus crisis.

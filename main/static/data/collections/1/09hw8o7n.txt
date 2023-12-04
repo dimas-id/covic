@@ -1,0 +1,1 @@
+Abstract The aim of this study is to test a pooling approach for the RT-PCR test to detect low viral loads of SARS-CoV-2. We found that a single positive specimen can still be detected in pools of up to 10. Each laboratory should conduct its own evaluation and validation of pooling protocols according to its specific context.

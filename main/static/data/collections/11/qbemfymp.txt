@@ -1,0 +1,1 @@
+We integrate the human movement and healthcare resource data to identify cities with high vulnerability towards the 2019-nCoV epidemic with respect to available health resources. The results inform public health responses in multiple ways.

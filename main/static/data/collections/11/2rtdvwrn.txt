@@ -1,0 +1,1 @@
+We analyzed outcomes of 34,686 SARS-CoV-2 confirmed cases of patients attending the IMSS (Mexican Institute for National Insurance) from January 2 to June 23, 2020. We calculated relative IFR by age group and gender and introduced the concept of adjusted lethalities, that can be used to project the burden of the disease for a population with different demographic characteristics.

@@ -1,0 +1,1 @@
+Recently, a QCD sum-rule analysis of tetraquark molecular states has been published, having the objective of demonstrating that our previously formulated tetraquark-adequate QCD sum rules are not correct. This comment brings to the attention of the reader inconsistencies in that article and explains some subtle details of QCD sum rules for exotic states.

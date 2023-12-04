@@ -1,0 +1,1 @@
+Abstract Potential pitfalls in the development, deployment and interpretation of antibody tests for COVID-19 are discussed. Lessons learned from the experience with the introduction of antibody tests for HIV are highlighted.

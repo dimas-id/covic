@@ -1,0 +1,1 @@
+We propose that developmental cognitive science should invest in an online CRADLE, a Collaboration for Reproducible and Distributed Large-Scale Experiments that crowdsources data from families participating on the internet. Here, we discuss how the field can work together to further expand and unify current prototypes for the benefit of researchers, science, and society.

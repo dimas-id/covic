@@ -1,0 +1,1 @@
+Given only the free-tree structure of a tree, the root estimation problem asks if one can guess which of the free tree's nodes was is the of the original tree. We determine the maximum-likelihood estimator for the root of a free tree when the underlying tree is a size-conditioned Galton-Watson tree and calculate its probability of being correct.

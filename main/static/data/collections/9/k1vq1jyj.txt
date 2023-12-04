@@ -1,0 +1,1 @@
+UNSTRUCTURED We propose a concept of contact notification tool for assisting tracing contacts who are exposure to confirmed COVID-19 cases, which is simple and affordable for countries with limited health manpower and high-tech means.

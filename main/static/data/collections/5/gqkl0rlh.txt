@@ -1,0 +1,1 @@
+A modifier is a k-ary operator acting on DFAs and producing a DFA. Modifiers are involved in the theory of state complexity. We define and study a class of simple modifiers, called product modifiers, and we link closely the regular operations they encode to boolean operations.

@@ -1,0 +1,1 @@
+In this paper we provide a decidable characterisation of the context-freeness of a Word-MIX language [Formula: see text], where [Formula: see text] is the set of all words over [Formula: see text] that contain the same number of subword occurrences of parameter words [Formula: see text].

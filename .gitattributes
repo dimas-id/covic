@@ -1,0 +1,2 @@
+path/to/collections-cord.zip filter=lfs diff=lfs merge=lfs -text
+collections-cord.zip filter=lfs diff=lfs merge=lfs -text

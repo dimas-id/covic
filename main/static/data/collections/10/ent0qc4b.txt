@@ -1,0 +1,1 @@
+A general phase plot is proposed for discrete particle shells that allows for thermal fluctuations of the shell geometry and of the inter-particle connectivities. The phase plot contains a first-order melting transition, a buckling transition, and a collapse transition and is used to interpret the thermodynamics of microbiological shells.

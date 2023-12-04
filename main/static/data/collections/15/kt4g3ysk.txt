@@ -1,0 +1,1 @@
+We propose a recommender system to detect personalized video summaries, that make visual content interesting for the subjective criteria of the user. In order to provide accurate video summarization, the video segmentation provided by the users and the features of the video segments’ duration are combined using a Synthetic Coordinate based Recommendation system.

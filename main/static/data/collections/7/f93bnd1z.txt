@@ -1,0 +1,1 @@
+The feline kidney cell line CrFK is used extensively for viral infectivity assays and for study of the biology of various retroviruses and derived vectors. We demonstrate the production of an endogenous, RD114-like, infectious retrovirus from CrFK cells. This virus also is shown to efficiently package Moloney murine leukemia virus vectors.

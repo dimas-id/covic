@@ -1,0 +1,1 @@
+Summary In data science, there's long been an acknowledgment of the way data can flatten and dehumanize the people it represents - this limitation becomes most obvious when considering the pure inability of such numbers and figures to truly capture the reality of lives lost.

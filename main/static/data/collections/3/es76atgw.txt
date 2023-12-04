@@ -1,0 +1,1 @@
+After years of development, biosensors based on imaging ellipsometry and biosensors based on total internal reflection imaging ellipsometry have been successfully implemented in various engineering systems. Their experimental setups, detection principles, and biological and clinical applications are briefly reviewed.

@@ -1,0 +1,1 @@
+Circular RNAs are generated at low levels from many protein-coding genes. Liu et al. now reveal that many of these transcripts bind and inhibit the double-stranded RNA (dsRNA)-dependent kinase PKR. Upon viral infection, circular RNAs are globally degraded to release PKR, which becomes activated to aid in the immune response.

@@ -1,0 +1,1 @@
+We describe the application of mathematical models in the study of disease epidemics with particular focus on pandemic influenza. We outline the general mathematical approach and the complications arising from attempts to apply it for disease outbreak management in a real public health context.

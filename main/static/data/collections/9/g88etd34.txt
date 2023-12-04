@@ -1,0 +1,1 @@
+We introduce two essentially undecidable first-order theories [Formula: see text] and [Formula: see text]. The intended model for the theories is a term model. We prove that [Formula: see text] is mutually interpretable with Robinson’s [Formula: see text]. Moreover, we prove that Robinson’s [Formula: see text] is interpretable in [Formula: see text].

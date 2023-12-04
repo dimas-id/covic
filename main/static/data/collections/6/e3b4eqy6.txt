@@ -1,0 +1,1 @@
+For each US county, we calculated the probability of an ongoing COVID-19 epidemic that may not yet be apparent. Based on confirmed cases as of April 15, 2020, COVID-19 is likely spreading in 86% of counties containing 97% of US population. Proactive measures before two cases are confirmed are prudent.

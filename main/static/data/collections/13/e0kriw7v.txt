@@ -1,0 +1,1 @@
+This is a protocol for a Cochrane Review (Intervention). The objectives are as follows: To determine the clinical effectiveness and safety of prophylactic plasma transfusion for people with confirmed or presumed coagulopathy requiring non-cardiac surgery.

@@ -1,0 +1,1 @@
+The main goal of this work is to introduce a new SIS epidemic model based on a particular type of finite state machines called cellular automata on graphs. The state of each cell stands for the fraction of the susceptible and infected individuals of the cell at a particular time step and the evolution of these classes is given in terms of a local transition function.

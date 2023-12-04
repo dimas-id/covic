@@ -1,0 +1,1 @@
+We develop a numerical nonlinear algebra approach for computing the Euler characteristic of an affine variety. Our approach is to relate Euler characteristics of a smooth affine variety with the number of critical points using Morse theory. In general, we stratify a variety into the union of smooth affine varieties to obtain results on singular varieties.

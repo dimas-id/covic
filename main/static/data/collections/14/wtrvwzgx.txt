@@ -1,0 +1,1 @@
+We paired high-resolution travel-time metrics with a SARS-CoV-2 testing location database in the United States. Median travel time to testing sites is longer in counties with lower population density, and a higher percent of minority and uninsured individuals. Differential geographic accessibility to testing can recapitulate healthcare disparities and bias transmission estimates.

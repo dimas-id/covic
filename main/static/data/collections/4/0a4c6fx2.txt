@@ -1,0 +1,1 @@
+Mit bloßen Auge zu erkennen: Mithilfe von Graphenoxid (GO) kann die Helicase‐abhängige Entwindung doppelsträngiger DNA (dsDNA) quantitativ und in Echtzeit verfolgt werden. GO bindet selektiv an entwundene fluoreszenzmarkierte einzelsträngige DNA und löscht die Fluoreszenz (siehe Bild). Die Helicaseaktivität wird über die Fluoreszenzänderung registriert.[Image: see text]

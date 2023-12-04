@@ -1,0 +1,1 @@
+We survey recent developments related to the Minimum Circuit Size Problem.

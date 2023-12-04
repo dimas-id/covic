@@ -1,0 +1,1 @@
+We present an algorithm for dynamical fitting of a logistic curve to the Covid-19 epidemics data, with fit-parameters linearly evolving to the future. We show that the algorithm would have given reasonable short- and medium-range predictions for the epidemics for several countries.

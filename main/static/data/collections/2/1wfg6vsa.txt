@@ -1,0 +1,1 @@
+In the framework of finite-type arithmetic, we characterize the notion that an existence statement is primitive recursive Weihrauch reducible to the parallelization of another existence statement by a standard derivability notion in constructive reverse mathematics.
