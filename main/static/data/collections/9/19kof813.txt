@@ -1,0 +1,1 @@
+A system for rapid determination of viral RNA sequences, RDV, was improved for detection of avian RNA virus in allantoic fluids. We detected avian paramyxovirus nucleotide sequences using RDV method ver 2.0.

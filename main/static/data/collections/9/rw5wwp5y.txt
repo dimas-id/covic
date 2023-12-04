@@ -1,0 +1,1 @@
+Organizing professional conferences online has never been more timely. Responding to the new challenges raised by COVID-19, the organizers of the ACM/SPEC International Conference on Performance Engineering 2020 had to address the question: How should we organize these conferences online? This article summarizes their successful answer.

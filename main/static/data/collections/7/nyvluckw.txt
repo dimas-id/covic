@@ -1,0 +1,1 @@
+We estimate the effective reproduction number for 2019-nCoV based on the daily reported cases from China CDC. The results indicate that 2019-nCoV has a higher effective reproduction number than SARS with a comparable fatality rate.

@@ -1,0 +1,1 @@
+The main idea of the paper is to generalize the concept of lattice valued fuzzy measures and integrals for data from complete residuated lattice where double negation law holds and then to show their relationship to isotone [Formula: see text]-fuzzy concept forming operators.

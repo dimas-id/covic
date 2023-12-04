@@ -1,0 +1,1 @@
+We introduce a data-dependent regularization problem which uses the geometry structure of the data to learn functions from incomplete data. We show another proof of the standard representer theorem when introducing the problem. At the end of the paper, two applications in image processing are used to illustrate the function learning framework.

@@ -1,0 +1,1 @@
+A new system architecture for electrosurgical generators inherently produces the ideal electrosurgical output characteristic with near-deadbeat control. Compared to existing technology, this converter significantly improves power regulation, leading to improved surgical outcomes by minimizing thermal spread and tissue charring.

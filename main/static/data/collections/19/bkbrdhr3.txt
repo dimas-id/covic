@@ -1,0 +1,1 @@
+In this work, a proposal to forecast the populations using generalized logistics regression curve fitting is presented. This type of curve is used to study population growth, in this case population of people infected with the Covid-19 virus; and it can also be used to approximate the survival curve used in actuarial and similar studies.

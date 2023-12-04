@@ -1,0 +1,1 @@
+The RNA purification is the gold standard for the detection of SARS-CoV-2 in swab samples, but it is dependent on the availability of chemical reagents. In this study, we evaluated the heat treatment method without RNA extraction as a reliable option to nucleic acid purification.

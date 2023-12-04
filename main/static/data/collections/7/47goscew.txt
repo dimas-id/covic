@@ -1,0 +1,1 @@
+We propose the use of a machine learning algorithm to improve possible COVID-19 case identification more quickly using a mobile phone–based web survey. This method could reduce the spread of the virus in susceptible populations under quarantine.

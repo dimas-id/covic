@@ -1,0 +1,1 @@
+This paper continues the research in formal theory of intermediate quantifiers. We present some new properties, introduce intermediate quantifiers of type [Formula: see text], and also new quantifiers MORE-THAN and LESS-THAN.

@@ -1,0 +1,1 @@
+Serological testing for SARS-CoV-2 has enormous potential to contribute to COVID-19 pandemic response efforts. However, the required performance characteristics of antibody tests will critically depend on the use case (individual-level vs. population-level).

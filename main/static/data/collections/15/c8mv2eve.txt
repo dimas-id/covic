@@ -1,0 +1,1 @@
+We implemented a real-time report to distribute respiratory pathogen data for our 8-hospital system to anyone with an Internet connection and a web browser. Real-time access to accurate regional laboratory observation data during an epidemic influenza season can guide diagnostic and therapeutic strategies.

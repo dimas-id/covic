@@ -1,0 +1,1 @@
+This chapter discusses the conditions that typically bring about bailouts, bail-ins, and other types of bank resolution. Bailouts and bail-ins are usually triggered by financial crises, but may also occur during normal times in response to the distress of too-big-to-fail (TBTF), too-important-to-fail (TITF), or too-many-to-fail (TMTF) banks.

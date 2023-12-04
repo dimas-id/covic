@@ -1,0 +1,1 @@
+A configuration model for epidemic spread, based on a scale-free network, is introduced. We obtain the analytical solutions describing both unstable and stable dynamics of the epidemic spreading, and demonstrate how these regimes can interchange during the epidemic. We apply the model to the COVID-19 case and demonstrate the predictive features of our model.

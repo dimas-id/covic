@@ -1,0 +1,1 @@
+Infection spread among individuals is modelled with a continuous time Markov chain, in which subject interactions depend on their distance in space. The well known SIR model and non local variants of the latter are then obtained as large scale limits of the individual based model in two different scaling regimes of the interaction.

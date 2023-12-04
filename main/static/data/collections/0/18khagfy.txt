@@ -1,0 +1,1 @@
+We report that COVID-19 mortality and recovery rates in Hubei Province, China exponentially decays (R2>0.93) and grows (R2>0.95), respectively. A great number of newly supplied medical resources (health workers and beds) enabled overwhelming patients to be treated effectively. This may help other countries to deal with the coming COVID-19 outbreaks.

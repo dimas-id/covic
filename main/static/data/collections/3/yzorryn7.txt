@@ -1,0 +1,1 @@
+Muller's Ratchet predicts that when mutation rates are high and a significant proportion of mutations are deleterious, a kind of irreversible ratchet mechanism will gradually decrease the mean fitness of small populations of asexual organisms. This article is protected by copyright. All rights reserved.

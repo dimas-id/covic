@@ -247,7 +247,7 @@ if __name__ == "__main__":
 
     from compression import VBEPostings
 
-    with InvertedIndexWriter('test', postings_encoding=VBEPostings, directory='./tmp/') as index:
+    with InvertedIndexWriter('test', postings_encoding=VBEPostings, directory='main/static/data/tmp/') as index:
         index.append(1, [2, 3, 4, 8, 10], [2, 4, 2, 3, 30])
         index.append(2, [3, 4, 5], [34, 23, 56])
         index.index_file.seek(0)

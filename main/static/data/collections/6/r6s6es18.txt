@@ -1,0 +1,1 @@
+Computations with algebraic number fields and algebraic curves have been carried out for a long time. They resulted in many interesting examples and the formation of various conjectures. The aim of this talk is to report on some computations with algebraic surfaces that are currently possible.

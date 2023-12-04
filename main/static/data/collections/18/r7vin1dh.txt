@@ -1,0 +1,1 @@
+In this chapter, we present an introduction to scheduling in Industry 4.0 and cloud manufacturing systems. We elaborate on the peculiarities of scheduling and sequencing problems in the context of Industry 4.0 and smart manufacturing. We delineate recent research streams and summarize the structure and contribution of the book.

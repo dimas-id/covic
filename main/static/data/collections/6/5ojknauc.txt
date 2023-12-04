@@ -1,0 +1,1 @@
+In this paper we propose a model selection approach to fit a regression model using splines with a variable number of knots. We introduce a penalized criterion to estimate the number and the position of the knots where to anchor the splines basis. The method is evaluated on simulated data and applied to covid-19 daily reported cases for short-term prediction.

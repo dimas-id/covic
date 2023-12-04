@@ -1,0 +1,1 @@
+We analyzed 5,484 close contacts of COVID-19 cases from Italy, all of them tested for SARS-CoV-2 infection. We found an infection fatality ratio of 2.2% (95%CI 1.69-2.81%) and identified male sex, age>70 years, cardiovascular comorbidities, and infection early in the epidemics as risk factors for death.

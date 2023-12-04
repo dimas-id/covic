@@ -1,0 +1,1 @@
+We use a stochastic branching process to describe the beginning of a disease outbreak. Unlike compartmental models, if the basic reproduction number is greater than one there may be a minor outbreak or a major epidemic with a probability depending on the nature of the contact network. We use a network approach to determine the distribution of outbreak and epidemic sizes.

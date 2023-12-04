@@ -1,0 +1,1 @@
+In this paper a multi-order adaptive temporal-causal network model is introduced to model political evolution. The computational network model makes use of Hofstadter’s notion of a Strange Loop and was tested and validated successfully to reflect political oscillations seen in presidential elections in the USA over time.

@@ -1,0 +1,1 @@
+Infectious disease modeling has played a prominent role in recent outbreaks, yet integrating these analyses into public health decision-making has been challenging. We recommend establishing ‘outbreak science’ as an inter-disciplinary field to improve applied epidemic modeling.

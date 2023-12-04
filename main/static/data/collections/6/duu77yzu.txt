@@ -1,0 +1,1 @@
+Abstract In this review, we focus on the roles of long noncoding RNAs (lncRNAs), including cellular and viral lncRNAs, in virus replication in infected cells. We survey the interactions and functions of several cellular lncRNAs such as XIST, HOTAIR, NEAT1, BIC, and several virus-encoded lncRNAs.

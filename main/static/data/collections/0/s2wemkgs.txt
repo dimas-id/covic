@@ -1,0 +1,1 @@
+Abstract An improved procedure for solid phase coupling of Boc-aminooxyacetic acid to peptides is described. By avoiding base-containing activation mixtures which cause over-acylation, it practically suppresses this unwanted side reaction and leads to near quantitative yields of Aoa-peptides, useful as glycoprobe precursors in glycomic studies.

@@ -1,0 +1,1 @@
+We introduce measures of uncertainty that are based on Depth-Bounded Logics [4] and resemble belief functions. We show that our measures can be seen as approximation of classical probability measures over classical logic, and that a variant of the PSAT [10] problem for them is solvable in polynomial time.

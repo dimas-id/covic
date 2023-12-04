@@ -1,0 +1,1 @@
+The classical anti-cancer agents comprise cytotoxic compounds. Mostly, these drugs act by exerting DNA damage. In essence, there are two major response phenotypes available to a cell upon DNA damage, such as a chemotherapeutic drug action, to arrest the cell cycle and repair the damage, to initiate a pathway to apoptosis (programmed cell death).

@@ -1,0 +1,1 @@
+We offer an efficient mathematical model for forecasting the course of an emerging epidemic, with COVID-19 as a use case. We predict the future course of confirmed cases in a number of countries, and present the results in a modern online dashboard, updated daily and accessible to the public.

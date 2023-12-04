@@ -1,272 +1,280 @@
-import pickle
-import os
+import array
 
 
-class InvertedIndex:
-    """
-    Class yang mengimplementasikan bagaimana caranya scan atau membaca secara
-    efisien Inverted Index yang disimpan di sebuah file; dan juga menyediakan
-    mekanisme untuk menulis Inverted Index ke file (storage) saat melakukan indexing.
+class StandardPostings:
+    """ 
+    Class dengan static methods, untuk mengubah representasi postings list
+    yang awalnya adalah List of integer, berubah menjadi sequence of bytes.
+    Kita menggunakan Library array di Python.
 
-    Attributes
-    ----------
-    postings_dict: Dictionary mapping:
+    ASUMSI: postings_list untuk sebuah term MUAT di memori!
 
-            termID -> (start_position_in_index_file,
-                       number_of_postings_in_list,
-                       length_in_bytes_of_postings_list,
-                       length_in_bytes_of_tf_list)
-
-        postings_dict adalah konsep "Dictionary" yang merupakan bagian dari
-        Inverted Index. postings_dict ini diasumsikan dapat dimuat semuanya
-        di memori.
-
-        Seperti namanya, "Dictionary" diimplementasikan sebagai python's Dictionary
-        yang memetakan term ID (integer) ke 4-tuple:
-           1. start_position_in_index_file : (dalam satuan bytes) posisi dimana
-              postings yang bersesuaian berada di file (storage). Kita bisa
-              menggunakan operasi "seek" untuk mencapainya.
-           2. number_of_postings_in_list : berapa banyak docID yang ada pada
-              postings (Document Frequency)
-           3. length_in_bytes_of_postings_list : panjang postings list dalam
-              satuan byte.
-           4. length_in_bytes_of_tf_list : panjang list of term frequencies dari
-              postings list terkait dalam satuan byte
-
-    terms: List[int]
-        List of terms IDs, untuk mengingat urutan terms yang dimasukan ke
-        dalam Inverted Index.
-
+    Silakan pelajari:
+        https://docs.python.org/3/library/array.html
     """
 
-    def __init__(self, index_name, postings_encoding, directory=''):
+    @staticmethod
+    def encode(postings_list):
         """
-        Parameters
-        ----------
-        index_name (str): Nama yang digunakan untuk menyimpan files yang berisi index
-        postings_encoding : Lihat di compression.py, kandidatnya adalah StandardPostings,
-                        GapBasedPostings, dsb.
-        directory (str): directory dimana file index berada
-        """
-
-        self.index_file_path = os.path.join(directory, index_name+'.index')
-        self.metadata_file_path = os.path.join(directory, index_name+'.dict')
-
-        self.postings_encoding = postings_encoding
-        self.directory = directory
-
-        self.postings_dict = {}
-        self.terms = []         # Untuk keep track urutan term yang dimasukkan ke index
-        # key: doc ID (int), value: document length (number of tokens)
-        self.doc_length = {}
-        # Ini nantinya akan berguna untuk normalisasi Score terhadap panjang
-        # dokumen saat menghitung score dengan TF-IDF atau BM25
-
-    def __enter__(self):
-        """
-        Memuat semua metadata ketika memasuki context.
-        Metadata:
-            1. Dictionary ---> postings_dict
-            2. iterator untuk List yang berisi urutan term yang masuk ke
-                index saat konstruksi. ---> term_iter
-            3. doc_length, sebuah python's dictionary yang berisi key = doc id, dan
-                value berupa banyaknya token dalam dokumen tersebut (panjang dokumen).
-                Berguna untuk normalisasi panjang saat menggunakan TF-IDF atau BM25
-                scoring regime; berguna untuk untuk mengetahui nilai N saat hitung IDF,
-                dimana N adalah banyaknya dokumen di koleksi
-
-        Metadata disimpan ke file dengan bantuan library "pickle"
-
-        Perlu memahani juga special method __enter__(..) pada Python dan juga
-        konsep Context Manager di Python. Silakan pelajari link berikut:
-
-        https://docs.python.org/3/reference/datamodel.html#object.__enter__
-        """
-        # Membuka index file
-        self.index_file = open(self.index_file_path, 'rb+')
-
-        # Kita muat postings dict dan terms iterator dari file metadata
-        with open(self.metadata_file_path, 'rb') as f:
-            self.postings_dict, self.terms, self.doc_length = pickle.load(f)
-            self.term_iter = self.terms.__iter__()
-
-        return self
-
-    def __exit__(self, exception_type, exception_value, traceback):
-        """Menutup index_file dan menyimpan postings_dict dan terms ketika keluar context"""
-        # Menutup index file
-        self.index_file.close()
-
-        # Menyimpan metadata (postings dict dan terms) ke file metadata dengan bantuan pickle
-        with open(self.metadata_file_path, 'wb') as f:
-            pickle.dump([self.postings_dict, self.terms, self.doc_length], f)
-
-
-class InvertedIndexReader(InvertedIndex):
-    """
-    Class yang mengimplementasikan bagaimana caranya scan atau membaca secara
-    efisien Inverted Index yang disimpan di sebuah file.
-    """
-
-    def __iter__(self):
-        return self
-
-    def reset(self):
-        """
-        Kembalikan file pointer ke awal, dan kembalikan pointer iterator
-        term ke awal
-        """
-        self.index_file.seek(0)
-        self.term_iter = self.terms.__iter__()  # reset term iterator
-
-    def __next__(self):
-        """
-        Class InvertedIndexReader juga bersifat iterable (mempunyai iterator).
-        Silakan pelajari:
-        https://stackoverflow.com/questions/19151/how-to-build-a-basic-iterator
-
-        Ketika instance dari kelas InvertedIndexReader ini digunakan
-        sebagai iterator pada sebuah loop scheme, special method __next__(...)
-        bertugas untuk mengembalikan pasangan (term, postings_list, tf_list) berikutnya
-        pada inverted index.
-
-        PERHATIAN! method ini harus mengembalikan sebagian kecil data dari
-        file index yang besar. Mengapa hanya sebagian kecil? karena agar muat
-        diproses di memori. JANGAN MEMUAT SEMUA INDEX DI MEMORI!
-        """
-        curr_term = next(self.term_iter)
-        pos, number_of_postings, len_in_bytes_of_postings, len_in_bytes_of_tf = self.postings_dict[
-            curr_term]
-        postings_list = self.postings_encoding.decode(
-            self.index_file.read(len_in_bytes_of_postings))
-        tf_list = self.postings_encoding.decode_tf(
-            self.index_file.read(len_in_bytes_of_tf))
-        return (curr_term, postings_list, tf_list)
-
-    def get_postings_list(self, term):
-        """
-        Kembalikan sebuah postings list (list of docIDs) beserta list
-        of term frequencies terkait untuk sebuah term (disimpan dalam
-        bentuk tuple (postings_list, tf_list)).
-
-        PERHATIAN! method tidak boleh iterasi di keseluruhan index
-        dari awal hingga akhir. Method ini harus langsung loncat ke posisi
-        byte tertentu pada file (index file) dimana postings list (dan juga
-        list of TF) dari term disimpan.
-        """
-        # TODO
-        if term in self.postings_dict:
-            start_position, number_of_postings_in_list, length_in_bytes_of_postings_list, length_in_bytes_of_tf_list = self.postings_dict[term]
-
-            # Pindahkan posisi file ke awal daftar postings dari term tersebut
-            self.index_file.seek(start_position)
-
-            # Baca dan decode daftar posting
-            postings_list = self.postings_encoding.decode(self.index_file.read(length_in_bytes_of_postings_list))
-
-            # tf_list = self.postings_encoding.decode(self.index_file.read(length_in_bytes_of_tf_list))
-            tf_list = self.postings_encoding.decode_tf(self.index_file.read(length_in_bytes_of_tf_list))
-
-            return postings_list, tf_list
-        else: # term tidak ditemukan pada dictionary
-            return ()
-
-
-class InvertedIndexWriter(InvertedIndex):
-    """
-    Class yang mengimplementasikan bagaimana caranya menulis secara
-    efisien Inverted Index yang disimpan di sebuah file.
-    """
-
-    def __enter__(self):
-        self.index_file = open(self.index_file_path, 'wb+')
-        return self
-
-    def append(self, term, postings_list, tf_list):
-        """
-        Menambahkan (append) sebuah term, postings_list, dan juga TF list 
-        yang terasosiasi ke posisi akhir index file.
-
-        Method ini melakukan 4 hal:
-        1. Encode postings_list menggunakan self.postings_encoding (method encode),
-        2. Encode tf_list menggunakan self.postings_encoding (method encode_tf),
-        3. Menyimpan metadata dalam bentuk self.terms, self.postings_dict, dan self.doc_length.
-           Ingat kembali bahwa self.postings_dict memetakan sebuah termID ke
-           sebuah 4-tuple: - start_position_in_index_file
-                           - number_of_postings_in_list
-                           - length_in_bytes_of_postings_list
-                           - length_in_bytes_of_tf_list
-        4. Menambahkan (append) bystream dari postings_list yang sudah di-encode dan
-           tf_list yang sudah di-encode ke posisi akhir index file di harddisk.
-
-        Jangan lupa update self.terms dan self.doc_length juga ya!
-
-        SEARCH ON YOUR FAVORITE SEARCH ENGINE:
-        - Anda mungkin mau membaca tentang Python I/O
-          https://docs.python.org/3/tutorial/inputoutput.html
-          Di link ini juga bisa kita pelajari bagaimana menambahkan informasi
-          ke bagian akhir file.
-        - Beberapa method dari object file yang mungkin berguna seperti seek(...)
-          dan tell()
+        Encode postings_list menjadi stream of bytes
 
         Parameters
         ----------
-        term:
-            term atau termID yang merupakan unique identifier dari sebuah term
-        postings_list: List[Int]
-            List of docIDs dimana term muncul   
-        tf_list: List[Int]
+        postings_list: List[int]
+            List of docIDs (postings)
+
+        Returns
+        -------
+        bytes
+            bytearray yang merepresentasikan urutan integer di postings_list
+        """
+        # Untuk yang standard, gunakan L untuk unsigned long, karena docID
+        # tidak akan negatif. Dan kita asumsikan docID yang paling besar
+        # cukup ditampung di representasi 4 byte unsigned.
+        return array.array('L', postings_list).tobytes()
+
+    @staticmethod
+    def decode(encoded_postings_list):
+        """
+        Decodes postings_list dari sebuah stream of bytes
+
+        Parameters
+        ----------
+        encoded_postings_list: bytes
+            bytearray merepresentasikan encoded postings list sebagai keluaran
+            dari static method encode di atas.
+
+        Returns
+        -------
+        List[int]
+            list of docIDs yang merupakan hasil decoding dari encoded_postings_list
+        """
+        decoded_postings_list = array.array('L')
+        decoded_postings_list.frombytes(encoded_postings_list)
+        return decoded_postings_list.tolist()
+
+    @staticmethod
+    def encode_tf(tf_list):
+        """
+        Encode list of term frequencies menjadi stream of bytes
+
+        Parameters
+        ----------
+        tf_list: List[int]
             List of term frequencies
+
+        Returns
+        -------
+        bytes
+            bytearray yang merepresentasikan nilai raw TF kemunculan term di setiap
+            dokumen pada list of postings
+        """
+        return StandardPostings.encode(tf_list)
+
+    @staticmethod
+    def decode_tf(encoded_tf_list):
+        """
+        Decodes list of term frequencies dari sebuah stream of bytes
+
+        Parameters
+        ----------
+        encoded_tf_list: bytes
+            bytearray merepresentasikan encoded term frequencies list sebagai keluaran
+            dari static method encode_tf di atas.
+
+        Returns
+        -------
+        List[int]
+            List of term frequencies yang merupakan hasil decoding dari encoded_tf_list
+        """
+        return StandardPostings.decode(encoded_tf_list)
+
+
+class VBEPostings:
+    """ 
+    Berbeda dengan StandardPostings, dimana untuk suatu postings list,
+    yang disimpan di disk adalah sequence of integers asli dari postings
+    list tersebut apa adanya.
+
+    Pada VBEPostings, kali ini, yang disimpan adalah gap-nya, kecuali
+    posting yang pertama. Barulah setelah itu di-encode dengan Variable-Byte
+    Enconding algorithm ke bytestream.
+
+    Contoh:
+    postings list [34, 67, 89, 454] akan diubah dulu menjadi gap-based,
+    yaitu [34, 33, 22, 365]. Barulah setelah itu di-encode dengan algoritma
+    compression Variable-Byte Encoding, dan kemudian diubah ke bytesream.
+
+    ASUMSI: postings_list untuk sebuah term MUAT di memori!
+
+    """
+
+    @staticmethod
+    def vb_encode_number(number):
+        """
+        Encodes a number using Variable-Byte Encoding
+        Lihat buku teks kita!
         """
         # TODO
-        encoded_postings_list = self.postings_encoding.encode(postings_list)
-        encoded_tf = self.postings_encoding.encode_tf(tf_list)
+        bytess = []
+        while True:
+            bytess.insert(0,number%128)
+            if number<128:
+                break
+            number//=128
+        bytess[-1] += 128
 
-        start_position = self.index_file.tell()
-        number_of_postings_in_list = len(postings_list)
-        length_in_bytes_of_posting_list = len(encoded_postings_list)
-        length_in_bytes_of_tf_list = len(encoded_tf)
+        return bytess
 
-        self.postings_dict[term] = (
-            start_position,
-            number_of_postings_in_list,
-            length_in_bytes_of_posting_list,
-            length_in_bytes_of_tf_list,
-        )
-        self.terms.append(term)
+    @staticmethod
+    def vb_encode(list_of_numbers):
+        """ 
+        Melakukan encoding (tentunya dengan compression) terhadap
+        list of numbers, dengan Variable-Byte Encoding
+        """
+        # TODO
+        bytestreams = []
+        for number in list_of_numbers:
+            bytess = VBEPostings.vb_encode_number(number)
+            bytestreams.extend(bytess)
 
-        for i in range(len(postings_list)):
-            self.doc_length[postings_list[i]] = self.doc_length.get(postings_list[i],0) +  tf_list[i]
+        # return bytestreams
+        return bytes(bytearray(bytestreams))
 
-        self.index_file.write(encoded_postings_list)
-        self.index_file.write(encoded_tf)
+    @staticmethod
+    def encode(postings_list):
+        """
+        Encode postings_list menjadi stream of bytes (dengan Variable-Byte
+        Encoding). JANGAN LUPA diubah dulu ke gap-based list, sebelum
+        di-encode dan diubah ke bytearray.
 
-        return self
+        Parameters
+        ----------
+        postings_list: List[int]
+            List of docIDs (postings)
 
-if __name__ == "__main__":
+        Returns
+        -------
+        bytes
+            bytearray yang merepresentasikan urutan integer di postings_list
+        """
+        # TODO
+        # Convert postings list to gap-based list
+        gap_based_lst = [postings_list[0]]
+        for i in range(1,len(postings_list)):
+            gap_based_lst.append(postings_list[i]-postings_list[i-1])
 
-    from compression import VBEPostings
+        # Encode with VB Encoding
+        encoded_lst = VBEPostings.vb_encode(gap_based_lst)
 
-    with InvertedIndexWriter('test', postings_encoding=VBEPostings, directory='./tmp/') as index:
-        index.append(1, [2, 3, 4, 8, 10], [2, 4, 2, 3, 30])
-        index.append(2, [3, 4, 5], [34, 23, 56])
-        index.index_file.seek(0)
-        assert index.terms == [1, 2], "terms salah"
-        assert index.doc_length == {
-            2: 2, 3: 38, 4: 25, 5: 56, 8: 3, 10: 30}, "doc_length salah"
-        assert index.postings_dict == {1: (0,
-                                           5,
-                                           len(VBEPostings.encode(
-                                               [2, 3, 4, 8, 10])),
-                                           len(VBEPostings.encode_tf([2, 4, 2, 3, 30]))),
-                                       2: (len(VBEPostings.encode([2, 3, 4, 8, 10])) + len(VBEPostings.encode_tf([2, 4, 2, 3, 30])),
-                                           3,
-                                           len(VBEPostings.encode([3, 4, 5])),
-                                           len(VBEPostings.encode_tf([34, 23, 56])))}, "postings dictionary salah"
+        return encoded_lst
 
-        index.index_file.seek(index.postings_dict[2][0])
-        assert VBEPostings.decode(index.index_file.read(
-            len(VBEPostings.encode([3, 4, 5])))) == [3, 4, 5], "terdapat kesalahan"
-        assert VBEPostings.decode_tf(index.index_file.read(
-            len(VBEPostings.encode_tf([34, 23, 56])))) == [34, 23, 56], "terdapat kesalahan"
-        
+    @staticmethod
+    def encode_tf(tf_list):
+        """
+        Encode list of term frequencies menjadi stream of bytes
+
+        Parameters
+        ----------
+        tf_list: List[int]
+            List of term frequencies
+
+        Returns
+        -------
+        bytes
+            bytearray yang merepresentasikan nilai raw TF kemunculan term di setiap
+            dokumen pada list of postings
+        """
+        # print(f'Original tf_list: {tf_list}')
+        # print(f'Encoded tf_list: {VBEPostings.vb_encode(tf_list)}')
+        return VBEPostings.vb_encode(tf_list)
+
+    @staticmethod
+    def vb_decode(encoded_bytestream):
+        """
+        Decoding sebuah bytestream yang sebelumnya di-encode dengan
+        variable-byte encoding.
+        """
+        numbers = []
+        n = 0
+        for byte in encoded_bytestream:
+            if (byte < 128):
+                n = 128 * n + byte
+            else:
+                n = 128 * n + byte - 128
+                numbers.append(n)
+                n = 0
+        return numbers
+
+    @staticmethod
+    def decode(encoded_postings_list):
+        """
+        Decodes postings_list dari sebuah stream of bytes. JANGAN LUPA
+        bytestream yang di-decode dari encoded_postings_list masih berupa
+        gap-based list.
+
+        Parameters
+        ----------
+        encoded_postings_list: bytes
+            bytearray merepresentasikan encoded postings list sebagai keluaran
+            dari static method encode di atas.
+
+        Returns
+        -------
+        List[int]
+            list of docIDs yang merupakan hasil decoding dari encoded_postings_list
+        """
+        # TODO
+        # COnvert encoded_postings_list to bytearray
+        encoded_bytes = bytearray(encoded_postings_list)
+
+        # Decode with VB Encoding
+        gap_based_lst = VBEPostings.vb_decode(encoded_bytes)
+
+        # Convert gap-based list back to postings list
+        postings_list = [gap_based_lst[0]]
+        for i in range(1,len(gap_based_lst)):
+            postings_list.append(gap_based_lst[i]+postings_list[i-1])
+
+        return postings_list
+
+    @staticmethod
+    def decode_tf(encoded_tf_list):
+        """
+        Decodes list of term frequencies dari sebuah stream of bytes
+
+        Parameters
+        ----------
+        encoded_tf_list: bytes
+            bytearray merepresentasikan encoded term frequencies list sebagai keluaran
+            dari static method encode_tf di atas.
+
+        Returns
+        -------
+        List[int]
+            List of term frequencies yang merupakan hasil decoding dari encoded_tf_list
+        """
+        return VBEPostings.vb_decode(encoded_tf_list)
+
+
+if __name__ == '__main__':
+
+    postings_list = [34, 67, 89, 454, 2345738]
+    tf_list = [12, 10, 3, 4, 1]
+    for Postings in [StandardPostings, VBEPostings]:
+        print(Postings.__name__)
+        encoded_postings_list = Postings.encode(postings_list)
+        encoded_tf_list = Postings.encode_tf(tf_list)
+        print("byte hasil encode postings: ", encoded_postings_list)
+        print("ukuran encoded postings   : ",
+              len(encoded_postings_list), "bytes")
+        print("byte hasil encode TF list : ", encoded_tf_list)
+        print("ukuran encoded postings   : ", len(encoded_tf_list), "bytes")
+
+        decoded_posting_list = Postings.decode(encoded_postings_list)
+        decoded_tf_list = Postings.decode_tf(encoded_tf_list)
+        print("hasil decoding (postings): ", decoded_posting_list)
+        print("hasil decoding (TF list) : ", decoded_tf_list)
+        assert decoded_posting_list == postings_list, "hasil decoding tidak sama dengan postings original"
+        assert decoded_tf_list == tf_list, "hasil decoding tidak sama dengan postings original"
+        print()

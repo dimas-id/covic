@@ -1,0 +1,1 @@
+This decision analytical model describes several key epidemiological features of imported coronavirus disease 2019 (COVID-19) cases in Wenzhou, China.

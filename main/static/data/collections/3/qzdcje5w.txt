@@ -1,0 +1,1 @@
+We analyzed the dynamics of cumulative severe acute respiratory syndrome (SARS) cases in Singapore, Hong Kong, and Beijing using the Richards model. The predicted total SARS incidence was close to the actual number of cases; the predicted cessation date was close to the lower limit of the 95% confidence interval.

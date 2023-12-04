@@ -1,0 +1,1 @@
+This paper defines boolean monadic recursive schemes (BMRSs), a restriction on recursive programs, and shows that when interpreted as transductions on strings they describe exactly the subsequential functions. We discuss how this new result furthers the study of the connections between logic, formal languages and functions, and automata.

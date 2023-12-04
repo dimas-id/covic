@@ -10,8 +10,12 @@ from compression import VBEPostings
 from tqdm import tqdm
 
 import re
-from mpstemmer import MPStemmer
-from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
+
+import nltk
+from nltk.stem.porter import *
+from nltk.corpus import stopwords
+nltk.download('stopwords')
+
 
 from operator import itemgetter
 
@@ -58,17 +62,6 @@ class BSBIIndex:
         with open(os.path.join(self.output_dir, 'docs.dict'), 'rb') as f:
             self.doc_id_map = pickle.load(f)
 
-    def pre_processing_text(self, content):
-        """
-        Melakukan preprocessing pada text, yakni stemming dan removing stopwords
-        """
-        # https://github.com/ariaghora/mpstemmer/tree/master/mpstemmer
-
-        stemmer = MPStemmer()
-        stemmed = stemmer.stem(content)
-        remover = StopWordRemoverFactory().create_stop_word_remover()
-        return remover.remove(stemmed)
-
     def parsing_block(self, block_path):
         """
         Lakukan parsing terhadap text file sehingga menjadi sequence of
@@ -111,10 +104,8 @@ class BSBIIndex:
         td_pairs = []
         tokenizer_pattern = r'\w+'
 
-        stemmer = MPStemmer()
-
-        stop_factory = StopWordRemoverFactory()
-        stopwords = stop_factory.get_stop_words()
+        stemmer = PorterStemmer()
+        stopwords_set = set(stopwords.words("english"))
 
         for root, _, files in os.walk(os.path.join(self.data_dir,block_path)):
             for file in files:
@@ -122,7 +113,7 @@ class BSBIIndex:
                     text = f.read()
                     text = re.findall(tokenizer_pattern,text.lower())
                     text = [stemmer.stem(word) for word in text]
-                    text = [word for word in text if word not in stopwords]
+                    text = [word for word in text if word not in stopwords_set]
 
                     for token in text:
                         term_id = self.term_id_map[token]
@@ -152,8 +143,6 @@ class BSBIIndex:
         index: InvertedIndexWriter
             Inverted index pada disk (file) yang terkait dengan suatu "block"
         """
-        # TODO
-
         term_dict = {} # key: term-id, value: sorted doc-id: freq. term-id muncul pada doc-id
         # {term-id: {doc-id: freq}} -> term_dict, {doc-id: freq} -> docid_freq
         
@@ -254,13 +243,12 @@ class BSBIIndex:
             self.load() # load terms and docs from pickle file
 
         tokenizer_pattern = r'\w+'
-        stemmer = MPStemmer()
-        stop_factory = StopWordRemoverFactory()
-        stopwords = stop_factory.get_stop_words()
+        stemmer = PorterStemmer()
+        stopwords_set = set(stopwords.words("english"))
 
         query = re.findall(tokenizer_pattern,query.lower())
         query = [stemmer.stem(word) for word in query]
-        query = [word for word in query if word not in stopwords]
+        query = [word for word in query if word not in stopwords_set]
 
         if len(query) == 0: # case when all of the query are in stopwords, hence the length of list of token in query is 0
             return []
@@ -343,13 +331,12 @@ class BSBIIndex:
             self.load() # load terms and docs from pickle file
 
         tokenizer_pattern = r'\w+'
-        stemmer = MPStemmer()
-        stop_factory = StopWordRemoverFactory()
-        stopwords = stop_factory.get_stop_words()
+        stemmer = PorterStemmer()
+        stopwords_set = set(stopwords.words("english"))
 
         query = re.findall(tokenizer_pattern,query.lower())
         query = [stemmer.stem(word) for word in query]
-        query = [word for word in query if word not in stopwords]
+        query = [word for word in query if word not in stopwords_set]
 
         if len(query) == 0: # case when all of the query are in stopwords, hence the length of list of token in query is 0
             return []
@@ -436,7 +423,7 @@ class BSBIIndex:
 
 if __name__ == "__main__":
 
-    BSBI_instance = BSBIIndex(data_dir='collections',
+    BSBI_instance = BSBIIndex(data_dir='main/static/data/collections',
                               postings_encoding=VBEPostings,
-                              output_dir='index')
+                              output_dir='main/static/data/index')
     BSBI_instance.do_indexing()  # memulai indexing!

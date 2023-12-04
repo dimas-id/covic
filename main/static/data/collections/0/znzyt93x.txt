@@ -1,0 +1,1 @@
+Countries that implemented liberal testing with active case finding and prompt isolation, combined with contact tracing and quarantine, were more successful in reducing the reproduction number compared to countries that primarily relied on social distancing and lockdown measures.

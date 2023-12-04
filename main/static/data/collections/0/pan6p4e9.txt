@@ -1,0 +1,1 @@
+We discuss an approach for fitting robust nonlinear regression models, which can be employed to model and predict the contagion dynamics of the Covid-19 in Italy. The focus is on the analysis of epidemic data using robust dose-response curves, but the functionality is applicable to arbitrary nonlinear regression models.

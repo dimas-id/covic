@@ -1,0 +1,1 @@
+Based on the well known SIR model, this paper develops a model for predicting the number of necessary testings of asymptomatic persons in order to push Reff below 1, thus suppressing an outbreak. The model considers R0, time for obtaining a test result, and effect of population discipline. The outcome are closed form expressions for the number of daily tests.

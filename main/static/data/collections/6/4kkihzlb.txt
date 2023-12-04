@@ -1,0 +1,1 @@
+We present a method for evaluating the reverse Grünwald-Letnikov fractional derivatives of the Riemann Zeta function [Formula: see text] and use it to explore the location of zeros of integral and fractional derivatives on the left half plane.

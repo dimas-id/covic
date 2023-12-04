@@ -1,0 +1,1 @@
+To date, no specific estimate of R(0) for SARS-CoV-2 is available for healthcare settings. Using inter-individual contact data, we highlight that R(0) estimates from the community cannot translate directly to healthcare settings, with pre-pandemic R(0) values ranging 1.3-7.7 in three illustrative healthcare institutions. This has implications for nosocomial Covid-19 control.

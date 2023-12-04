@@ -1,0 +1,1 @@
+An ecoepidemiological model in which the disease can be transmitted from one population to another one is considered. Linear harvesting on all the populations is considered. By means of numerical simulations, the role of the epidemiological parameters as well as that of harvesting are investigated. Some relevant consequences of harvesting on the system dynamics are discovered.

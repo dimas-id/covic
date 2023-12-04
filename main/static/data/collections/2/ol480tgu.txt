@@ -1,0 +1,1 @@
+A hands-on course mainly for the applications of bioinformatics to biological problems was organized at Peking University. The course materials are from http://abc.cbi.pku.edu.cn. They are divided into individual pages (separated by lines in the text):

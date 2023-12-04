@@ -1,0 +1,1 @@
+Abstract AG7088 was identified as a good starting point for modification, leading to an efficient and bio-available inhibitor for the SARS coronavirus main proteinase (SARS-CoV Mpro). Synthesis of intermediate 1 and analogues proceeded via a highly diastereoselective indium-mediated allylation of α-aminoaldehydes.

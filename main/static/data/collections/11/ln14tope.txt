@@ -1,0 +1,1 @@
+COVID-19 RT-PCR employee-testing was implemented across NYU Langone. Over eight-weeks, 14,764 employees were tested: 33% of symptomatic employees, 8% of asymptomatic employees reporting COVID-19 exposure, 3% of employees returning to work were positive. Positivity rates declined over time possibly reflecting the importance of community transmission and efficacy of PPE.

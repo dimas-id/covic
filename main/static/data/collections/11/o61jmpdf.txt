@@ -1,0 +1,1 @@
+Trends in mass analyzer development are reviewed here with an emphasis on tandem mass spectrometers. The move toward “hybridization” of conventional mass analyzers to allow additional instrument functionality in tandem mass spectrometry is discussed.

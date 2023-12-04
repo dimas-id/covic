@@ -1,0 +1,1 @@
+We proposed a Monte-Carlo method to estimate temporal reproduction number without complete information about symptom onsets of all cases. Province-level analysis demonstrated the huge success of Chinese control measures on COVID-19, that is, provinces' reproduction numbers quickly decrease to<1 by just one week after taking actions.

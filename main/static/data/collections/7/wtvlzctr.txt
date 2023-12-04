@@ -1,0 +1,1 @@
+This paper describes the design of the normalising tactic ring_exp for the Lean prover. This tactic improves on existing tactics by extending commutative rings with a binary exponent operator. An inductive family of types represents the normal form, enforcing various invariants. The design can also be extended with more operators.

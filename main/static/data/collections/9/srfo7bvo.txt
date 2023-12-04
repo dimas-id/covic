@@ -1,0 +1,1 @@
+This paper presents a finite element solver for poroelasticity in the 2-field approach and its implementation on the deal.II platform. Numerical experiments on benchmarks are presented to demonstrate the accuracy and efficiency of this new solver.

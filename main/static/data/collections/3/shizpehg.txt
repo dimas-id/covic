@@ -1,0 +1,1 @@
+To investigate the causative agent of swine diarrhea, next-generation sequencing (NGS) was performed on a porcine fecal sample. The NGS reads were assembled, which generated a complete swine Deltacoronavirus genome sequence, that of strain SDCV/USA/Illinois121/2014.

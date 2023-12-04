@@ -1,0 +1,1 @@
+Abstract Here we designed and tested two highly specific quantitative TaqMan®-MGB-based reverse transcriptase quantitative polymerase chain reaction (RT-qPCR) assays for Middle East Respiratory Syndrome (MERS). The primers and probes for these assays were evaluated and found to have a limit of detection (LOD) of 0.005 plaque-forming units/PCR (pfu/PCR).

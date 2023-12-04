@@ -1,0 +1,1 @@
+On basis of laboratory examinations indicators from a total of 620 samples, a machine learning-based diagnosis model was developed, and subsequently implemented as a COVID-19 diagnosis aid APP. External validation showed satisfiable model prediction performance (i.e., AUC= 0.872) which guarantees the promising use of this tool for extensive screening.

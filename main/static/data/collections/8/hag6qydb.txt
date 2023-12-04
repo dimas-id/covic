@@ -1,0 +1,1 @@
+A recent study provides a platform for generating infectious coronavirus genomes using sequence data, examining their capabilities of replicating in human cells and causing diseases in animal models, and evaluating therapeutics and vaccines. Similar approaches could be used to assess the potential of human emergence and pathogenicity for other viruses.

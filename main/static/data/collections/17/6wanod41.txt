@@ -1,0 +1,1 @@
+There are continuum many homeomorphism types of Polish spaces. In particular, there is a Polish space which is not homeomorphic to any computably presented Polish space. We examine the details of degrees of non-computability of presenting homeomorphic copies of Polish spaces.

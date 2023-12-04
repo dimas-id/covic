@@ -1,0 +1,1 @@
+We introduce twelve operators called fuzzy quantifier-based operators. They are proposed as a new tool to help to deepen the analysis of data in fuzzy formal concept analysis. Moreover, we employ them to construct a graded extension of Aristotle’s square, namely the graded decagon of opposition.

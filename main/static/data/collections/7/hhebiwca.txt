@@ -1,0 +1,1 @@
+In public databases, we identified sequences reported as human genes expressed in kidney mesangial cells. The similarity of these genes to paramyxovirus matrix, fusion, and phosphoprotein genes suggests that they are derived from a novel paramyxovirus. These genes are sufficiently unique to suggest the existence of a novel paramyxovirus genus.

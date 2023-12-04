@@ -1,0 +1,1 @@
+The development of distributed algorithms offers challenges in verifying that they meet their specifications. The correct-by-construction approach consists in developing a model of the algorithm before transforming this model into a program.

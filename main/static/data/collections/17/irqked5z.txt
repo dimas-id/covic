@@ -1,0 +1,1 @@
+Infection of novel Coronavirus has been declared pandemic by the WHO and now is a world public health crisis. Laboratory activity becames essential for the timely diagnosis. Few parameters, such Lymphocytes count, SaO2 and CRP serum level can be used to assess the severity of COVID-19 in emergency room.

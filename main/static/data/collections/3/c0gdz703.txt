@@ -1,0 +1,1 @@
+This case study continues the successful series of case studies for formal specification and verification of the ABZ conference series, which started with the landing gear system [1] and expanded with the hemodialysis medical device [4] and the European Train Control System (ETCS) [2] in the following years.

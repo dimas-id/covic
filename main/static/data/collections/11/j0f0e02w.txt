@@ -1,0 +1,1 @@
+Event-B [3] is a formal method that allows the verification of critical systems properties.

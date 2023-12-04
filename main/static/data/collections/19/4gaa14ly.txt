@@ -1,0 +1,1 @@
+A symptom-based mass screening and testing intervention (MSTI) can identify a large fraction of infected individuals during an infectious disease outbreak. China is currently using this strategy for the COVID-19 outbreak. However, MSTI might lead to increased transmission if not properly implemented. We investigate under which conditions MSTI is beneficial.
