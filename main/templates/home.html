@@ -1,14 +1,29 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock head %}
+
 {% block title %}
 Home
 {% endblock title %}
 
 {% block content %}
-<div style="--bs-bg-opacity: .5;"
-    class="d-flex flex-column p-5 align-self-stretch align-items-center justify-content-center bg-light">
-    <h1>COVID-19 Information Center</h1>
-    <p>Your reliable source of information for COVID-19 related needs!</p>
+<div class="d-flex flex-column flex-fill p-5 align-items-center justify-content-center">
+
+    <div class="d-flex flex-column align-items-center justify-content-center">
+        <h1 class="text-center">COVID-19 Information Center</h1>
+        <p class="text-center">Your reliable source of information for COVID-19 related needs!</p>
+    </div>
+
+    <form action="{% url 'main:search' %}" method="GET" class="d-flex">
+        <div class="d-flex flex-row grid gap-2">
+            <input type="text" class="form-control" placeholder="Search here" aria-label="Search here"
+                aria-describedby="basic-addon2">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+
 </div>
 {% endblock content %}
