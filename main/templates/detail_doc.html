@@ -9,8 +9,15 @@
 {% endblock title %}
 
 {% block content %}
-<div class="d-flex flex-column p-5 align-self-stretch align-items-center justify-content-center bg-light">
-    <h1>COVID-19 Information Center</h1>
-    <p>Your reliable source of information for COVID-19 related needs!</p>
+<div
+    class="d-flex flex-column flex-fill p-5 align-self-stretch align-items-center justify-content-center bg-light grid gap-3">
+    <div class="d-flex flex-row justify-content-between align-self-stretch align-items-center">
+        <button type="button" class="btn btn-secondary" onclick="history.back()">
+            Back</button>
+        <h1 class="d-flex text-center align-self-center">{{title}}</h1>
+        <button disabled type="button" class="btn btn-secondary opacity-0">
+            Back</button>
+    </div>
+    <p class="h5 fw-normal mb-1">{{text}}</p>
 </div>
 {% endblock content %}
