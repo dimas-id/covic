@@ -4,9 +4,9 @@ import contextlib
 import heapq
 import math
 
-from index import InvertedIndexReader, InvertedIndexWriter
-from util import IdMap, merge_and_sort_posts_and_tfs
-from compression import VBEPostings
+from .index import InvertedIndexReader, InvertedIndexWriter
+from .util import IdMap, merge_and_sort_posts_and_tfs
+from .compression import VBEPostings
 from tqdm import tqdm
 
 import re
