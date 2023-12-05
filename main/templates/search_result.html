@@ -1,17 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
+{% block head %}
+{% endblock head %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Result</title>
-</head>
+{% block title %}
+covic: {{query}}
+{% endblock title %}
 
-<body>
-
-</body>
-
-</html>
+{% block content %}
+<div class="d-flex flex-column p-5 align-self-stretch align-items-center justify-content-center bg-light">
+    <h1>COVID-19 Information Center</h1>
+    <p>Your reliable source of information for COVID-19 related needs!</p>
+</div>
+{% endblock content %}
