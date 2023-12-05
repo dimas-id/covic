@@ -67,7 +67,7 @@ def search(request):
                 path = doc[idx:]
                 # print(f'score: {score}, doc: {doc}')
 
-                result.append((title_doc, f'{text[:500]} ...', path))
+                result.append((title_doc, f'{text[:250]} ...', path))
             
             paginator = Paginator(result, 10)
 

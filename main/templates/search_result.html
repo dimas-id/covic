@@ -9,8 +9,62 @@ covic: {{query}}
 {% endblock title %}
 
 {% block content %}
-<div class="d-flex flex-column p-5 align-self-stretch align-items-center justify-content-center bg-light">
-    <h1>COVID-19 Information Center</h1>
-    <p>Your reliable source of information for COVID-19 related needs!</p>
+<div class="d-flex flex-column flex-fill p-5 align-items-center justify-content-start grid gap-3">
+
+    {% if not result %}
+
+    <div class="d-flex flex-column grid gap-5 align-items-center">
+        <form action="{% url 'main:search' %}" method="GET" class="d-flex">
+            <div class="d-flex flex-row grid gap-2">
+                <input type="text" class="form-control" name="q" value="{{query}}" placeholder="Search here"
+                    aria-label="Search here" aria-describedby="basic-addon2">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+        <p class="h2 pt-2">No Results for "{{ query }}" :(</p>
+    </div>
+
+    {% else %}
+
+    <div class="d-flex flex-column grid gap-3 align-items-center">
+        <form action="{% url 'main:search' %}" method="GET" class="d-flex">
+            <div class="d-flex flex-row grid gap-2">
+                <input type="text" class="form-control" name="q" value="{{query}}" placeholder="Search here"
+                    aria-label="Search here" aria-describedby="basic-addon2">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+        <p class="h5">Results for "{{ query }}"</p>
+    </div>
+
+    {% endif %}
+
+    <div class="list-group">
+        {% for result_item in result %}
+        <a href="{% url 'main:detail' result_item.2 %}" class="list-group-item list-group-item-action px-5 py-4">
+            <div class="d-flex flex-column w-100">
+                <h4 class="mb-1 fw-bold">Document {{result_item.0}}</h5>
+                    <p class="h5 fw-normal mb-1">{{result_item.1}}</p>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+
+    {% if result.paginator.num_pages > 1 %}
+    <div class="d-flex align-items-center flex-fill py-2 sticky-bottom">
+        <ul class="list-group list-group-horizontal">
+            {% for i in result.paginator.page_range %}
+            {% if i == result.number %}
+            <a class="list-group-item active">{{i}}</a>
+            {% else %}
+            <a class="list-group-item list-group-item-action"
+                href="{% url 'main:search' %}?q={{query}}&page={{i}}">{{i}}</a>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+
 </div>
 {% endblock content %}
