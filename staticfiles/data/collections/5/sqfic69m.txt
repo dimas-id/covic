@@ -1,0 +1,1 @@
+A mathematical model based on cellular automata on graphs to simulate a general epidemic spreading is presented in this paper. Specifically, it is a SIR-type model where the population is divided into susceptible, infected and recovered individuals.

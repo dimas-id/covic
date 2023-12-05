@@ -1,0 +1,1 @@
+Reproduction number is an epidemiologic indicator that reflects the contagiousness and transmissibility of infectious agents. This paper aims to estimate the reproduction number of in the early phase of COVID-19 outbreak in Vietnam.

@@ -1,0 +1,1 @@
+Cities across China implemented stringent social distancing measures in early 2020 to curb coronavirus disease outbreaks. We estimated the speed with which these measures contained transmission in cities. A 1-day delay in implementing social distancing resulted in a containment delay of 2.41 (95% CI 0.97-3.86) days.

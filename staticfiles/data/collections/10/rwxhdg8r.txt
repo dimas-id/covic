@@ -1,0 +1,1 @@
+Abstract Korber et al. (2020) found that a SARS-CoV-2 variant in the spike protein, D614G, rapidly became dominant around the world. While clinical and in vitro data suggest that D614G changes the virus phenotype, the impact of the mutation on transmission, disease, and vaccine and therapeutic development are largely unknown.

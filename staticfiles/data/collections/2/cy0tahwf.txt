@@ -1,0 +1,1 @@
+An error in data processing resulted in the tabulation of incorrect crude case fatality rate values, for age groups of 50-59 and above, in Table 5 (Crude Case Fatality Rate of all cases and hospitalised cases, by age group) as originally published in the COVID-19 (Australia) epidemiology report 14. The table below provides the corrected values.

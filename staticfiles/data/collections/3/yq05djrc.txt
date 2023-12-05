@@ -1,0 +1,1 @@
+A translational knowledge map of COVID-19, based on the analysis of scientific papers and networks citation concurrence of terms and keywords of the terms: covid- 19, 2019-ncov and sars-cov-2 in leading databases (MEDLINE, web of Science and Scopus), was constructed. Some fields of the research on covid-19 are connected together, differing in structure, content and evolution.

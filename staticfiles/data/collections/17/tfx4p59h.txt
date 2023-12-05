@@ -1,0 +1,1 @@
+Disease transmission models are becoming increasingly important both to public health policy makers and to scientists across many disciplines. We review some of the key aspects of how and why such models are related to data from infectious disease outbreaks, and identify a number of future challenges in the field.

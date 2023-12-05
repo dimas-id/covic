@@ -1,0 +1,1 @@
+Consider a nearest-neighbor random walk with certain asymptotically zero drift on the positive half line. Let $M$ be the maximum of an excursion starting from $1$ and ending at $0.$ We study the distribution of $M$ and characterize its asymptotics, which is quite different from those of simple random walks.

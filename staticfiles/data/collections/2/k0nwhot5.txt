@@ -1,0 +1,1 @@
+This case series study assesses the seasonality of respiratory viral infections among different age groups in Rhode Island from 2012 to 2016.

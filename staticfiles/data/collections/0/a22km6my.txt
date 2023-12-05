@@ -1,0 +1,1 @@
+This paper is devoted to the program Generation which is a self-containing console application for classification of linear codes. It can be used for codes over fields with [Formula: see text] elements and with wide-range parameters. The base of the implemented algorithm is the concept of canonical augmentation.

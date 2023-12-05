@@ -1,0 +1,1 @@
+We present an economical, battery-powered real-time polymerase chain reaction (RT-PCR) system suitable for field and point-of-care applications; it has a built-in thermal management, a fluorescence-based detection system, and a single chip controller with a graphic touch-screen display.

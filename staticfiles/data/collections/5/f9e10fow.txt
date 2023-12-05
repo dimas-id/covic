@@ -1,0 +1,1 @@
+Using 65 transmission pairs of SARS-CoV-2 reported to the Brazilian Ministry of Health we estimate the mean and standard deviation for the serial interval to be 2.97 and 3.29 days respectively. We also present a model for the serial interval probability distribution using only two parameters.

@@ -1,0 +1,1 @@
+In this paper we present the SageMath package FlexRiLoG (short for flexible and rigid labelings of graphs). Based on recent results the software generates motions of graphs using special edge colorings. The package computes and illustrates the colorings and the motions. We present the structure and usage of the package.

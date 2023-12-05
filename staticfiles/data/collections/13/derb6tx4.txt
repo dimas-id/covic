@@ -1,0 +1,1 @@
+We present the Mathematical Functions Grimoire (FunGrim), a website and database of formulas and theorems for special functions. We also discuss the symbolic computation library used as the backend and main development tool for FunGrim, and the Grim formula language used in these projects to represent mathematical content semantically.

@@ -1,0 +1,1 @@
+We present a new and efficient algorithm to solve the ’threshold all vs. all’ problem, which involves searching of two strings (with length N and M respectively) for finding all maximal approximate matches of length at least S and with up to K differences. The algorithm is based on a novel graph model, and it solves the problem in time O(NMK (2)).

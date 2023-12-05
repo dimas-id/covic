@@ -19,3 +19,4 @@ whitenoise==6.2.0
 lightgbm
 numpy
 nltk==3.7
+gensim

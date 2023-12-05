@@ -1,0 +1,1 @@
+In this work we propose a model to forecast the evolution of the number of COVID-19 symptomatic patients after drastic isolation measures using a combination of exponential grow models and the probability distribution of the incubation period.

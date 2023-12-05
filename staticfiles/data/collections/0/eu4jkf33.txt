@@ -1,0 +1,1 @@
+It is shown that estimates of the effective reproduction number Rt for COVID-19 using standard packages such as EPIESTIM can be reproduced very accurately using the expression Rt = c(t) /c(t + τ) , where c(t) is the incidence at time t and τ the mean value of the series interval

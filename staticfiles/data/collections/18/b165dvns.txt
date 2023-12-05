@@ -1,0 +1,1 @@
+An implementation of Viro’s patchworking in polymake is presented, and a census of Betti numbers of real tropical surfaces serves as a showcase. The latter is relevant in the context of Hilbert’s 16th Problem.

@@ -1,0 +1,1 @@
+We extend Merton’s framework by adopting stochastic volatility to propose an early warning indicator for banks’ credit risk. Bayesian inference is employed to estimate the parameters of Heston model. We provide empirical evidence and demonstrate the comparative strength of our risk measure over others.

@@ -1,0 +1,1 @@
+Quantification of the number of infectious viruses in a sample is a basic virological technique. In this chapter we provide a detailed description of three techniques to estimate the number of viable infectious avian coronaviruses in a sample. All three techniques are serial dilution assays, better known as titrations.

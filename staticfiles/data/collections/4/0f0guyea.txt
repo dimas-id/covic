@@ -1,0 +1,1 @@
+Evolution of the current infrastructure for surveillance of vaccine safety will be essential to meet our commitments to the public in the deployment of a vaccine (or vaccines) to COVID-19. The incorporation of concepts and tools within the fields of data science and systems immunology can be used to propel vaccine safety monitoring into the twenty-first century.

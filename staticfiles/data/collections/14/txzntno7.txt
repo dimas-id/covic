@@ -1,0 +1,1 @@
+The RoboStar framework supports model-based engineering of robotic applications.

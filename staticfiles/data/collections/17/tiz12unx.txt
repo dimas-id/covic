@@ -1,0 +1,1 @@
+We discuss how the presence of a large set of asymptomatic infectives changes our estimate of the COVID-19 basic reproduction number, also known as $R_0$.

@@ -1,0 +1,1 @@
+In this paper, we demonstrate that the machine learning approach of rule extraction from a trained neural network can be successfully applied to SARS-coronavirus cleavage site analysis. The extracted rules predict cleavage sites better than consensus patterns. Empirical experiments are also shown.

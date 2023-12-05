@@ -1,0 +1,1 @@
+To accelerate the development of drugs against severe acute respiratory syndrome (SARS), we constructed a homology model of the SARS coronavirus main protease using our modeling software, FAMS Ligand&Complex, and released it before the X-ray structure was solved. The X-ray structure showed our model as accurately predicted and useful for structure based drug design.

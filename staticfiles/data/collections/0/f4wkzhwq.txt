@@ -1,0 +1,1 @@
+In response to a recent outbreak in China, detection assays for a novel avian influenza A(H7N9) virus need to be implemented in a large number of public health laboratories. Here we present real-time reverse-transcription polymerase chain reaction (RT-PCR) assays for specific detection of this virus, along with clinical validation data and biologically-safe positive controls.

@@ -1,0 +1,1 @@
+Cographs constitute a small point in the atlas of graph classes. However, by zooming in on this point, we discover a complex world, where many parameters jump from finiteness to infinity. In the present paper, we identify several milestones in the world of cographs and create a hierarchy of graph parameters grounded on these milestones.

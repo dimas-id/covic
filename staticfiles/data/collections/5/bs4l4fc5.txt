@@ -1,0 +1,1 @@
+We present the ideas behind an algorithm to compute normalizers of primitive groups with non-regular socle in polynomial time. We highlight a concept we developed called permutation morphisms and present timings for a partial implementation of our algorithm. This article is a collection of results from the author’s PhD thesis.

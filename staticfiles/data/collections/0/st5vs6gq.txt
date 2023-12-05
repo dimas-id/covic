@@ -1,0 +1,1 @@
+We estimate the distribution of serial intervals for 468 confirmed cases of COVID-19 reported in 93 Chinese cities by February 8, 2020. The mean and standard deviation are 3.96 (95% CI 3.53–4.39) and 4.75 (95% CI 4.46–5.07) days, respectively, with 12.6% of reports indicating pre-symptomatic transmission.

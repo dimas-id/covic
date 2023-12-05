@@ -1,0 +1,1 @@
+This communication describes a recursive mathematical model of the spreading COVID-19 infection, which allows estimating the effectiveness of quarantine measures. The model was used to analyze the situation in eight countries and to find the viral transmissibility, which made it possible to give a brief prediction of the COVID-19 spreading.

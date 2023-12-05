@@ -1,0 +1,1 @@
+We enrolled 53 consecutive in-patients with COVID-19 at six hospitals in Toronto, Canada, and tested one nasopharyngeal swab/saliva sample pair from each patient for SARS-CoV-2. Overall, sensitivity was 89% for nasopharyngeal swabs and 77% for saliva (p=NS); difference in sensitivity was greatest for sample pairs collected later in illness.

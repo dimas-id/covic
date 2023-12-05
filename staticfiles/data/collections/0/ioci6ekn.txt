@@ -1,0 +1,1 @@
+A fundamental theorem states that every field admits an algebraically closed extension. Despite its central importance, this theorem has never before been formalised in a proof assistant. We fill this gap by documenting its formalisation in Isabelle/HOL, describing the difficulties that impeded this development and their solutions.

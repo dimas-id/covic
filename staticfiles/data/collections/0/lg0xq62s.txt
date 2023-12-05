@@ -1,0 +1,1 @@
+The fac-[(99m)Tc(OH2)3(CO)3](+) complex reacts with QD-filled micelles to create a bimodal SPECT-optical imaging probe which upon visible light irradiation generates cisplatin from an inert Pt(IV) prodrug.

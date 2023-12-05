@@ -1,0 +1,1 @@
+UNLABELLED A modification to Phred and program to detect heterogeneous positions, which is particularly useful in the identification of mutations and other abnormalities in Phred/Phrap genome assemblies. AVAILABILITY The package is made available at http://glscompute.gis.a-star.edu.sg/~charlie/DHetero.html

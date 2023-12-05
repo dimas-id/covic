@@ -1,0 +1,1 @@
+Abstract Graphical representation methods constitute a class of alignment-free techniques for comparative study of biomolecular sequences. In this brief commentary, we study how well some of these methods can discriminate among closely related genes.

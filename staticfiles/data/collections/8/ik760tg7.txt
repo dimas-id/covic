@@ -1,0 +1,1 @@
+This book shows a buffet of artificial intelligence applications from drone to deep learning and from data analysis to the prediction of next pandemic disease along with its drug discovery. Today the entire globe is under the threat of COVID-19 affecting around 200 countries. The death toll reported in these highly affected countries has become catastrophic.

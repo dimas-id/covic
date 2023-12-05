@@ -1,0 +1,1 @@
+RNA extraction has become a bottleneck for detection of COVID-19, in part because of reagent shortages. We present here a rapid protocol that circumvents the need for RNA extraction that is compatible with RT-qPCR-based detection methods.

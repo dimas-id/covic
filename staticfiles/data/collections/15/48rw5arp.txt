@@ -1,0 +1,1 @@
+Abstract An efficient method for the generation of gene banks from large RNA viruses is described using infectious bronchitis virus as an example. Randomly primed clones have been characterized and found to be representative of the viral genome including 5' leader sequences.

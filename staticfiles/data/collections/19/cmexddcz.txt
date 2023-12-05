@@ -1,0 +1,1 @@
+A hyperoval of a point-line geometry is a nonempty set of points meeting each line in either 0 or 2 points. We discuss a combination of theoretical and practical techniques that are helpful for classifying hyperovals of generalized quadrangles. These techniques are based on the connection between hyperovals, even sets and pseudo-embeddings of point-line geometries.

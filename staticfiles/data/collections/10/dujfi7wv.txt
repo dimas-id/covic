@@ -1,0 +1,1 @@
+It was shown in [4] that the quasi-Polish spaces introduced in [2] can be equivalently characterized as spaces of ideals in the following sense.

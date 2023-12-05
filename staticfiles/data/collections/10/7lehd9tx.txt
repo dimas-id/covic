@@ -1,0 +1,1 @@
+The novel pyrimidine nucleoside, (3'S)-3'-deoxy-3'-fluoro-3'-C-ethynylcytidine (1) was synthesized from cytidine in seven steps. The key step in the synthesis was the introduction of the tertiary fluorine at the 3'-position. Compound 1 was evaluated in vitro against several RNA viruses.

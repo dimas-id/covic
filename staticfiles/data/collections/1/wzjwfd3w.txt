@@ -1,0 +1,1 @@
+Coronavirus subgenomic minus-strand RNAs (negative-strand copies of the 3' coterminal subgenomic mRNAs) probably function in mRNA amplification by serving as templates for transcription from internal (intergenic) promoters, rather than by faithful (full-length) mRNA replication.

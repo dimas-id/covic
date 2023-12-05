@@ -1,0 +1,1 @@
+This paper empirically analyzes the impact of pandemic on the contracting of bank loans. Using data on syndicated loans during the season of H1N1 Swine Flu, we find that more flu is associated with higher loan spreads and smaller loan size. The adverse impact of pandemic was alleviated by the approval of vaccines.

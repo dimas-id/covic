@@ -1,0 +1,1 @@
+COVID-19 reached the US in January, 2020, but state and local case detection efforts varied in timing and scale. We conducted a state-level ecological analysis of COVID-19 epidemiology alongside CDC influenza surveillance data and policy timelines. Our findings show wide variation in COVID-19 case detection and influenza-like-illness activity between states.

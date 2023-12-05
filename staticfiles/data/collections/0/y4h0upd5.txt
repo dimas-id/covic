@@ -1,0 +1,1 @@
+We present double pooling, a simple, easy-to-implement variation on test pooling, that in certain ranges for the a priori probability of a positive test, is significantly more efficient than the standard single pooling approach (the Dorfman method).

@@ -1,0 +1,1 @@
+COVID-19 is a complex disease phenotype where the underlying microbiome could influence morbidity and mortality. Amplicon and metagenomic MinION based sequencing was used to rapidly (within 8 hours) identify SARS-CoV-2 and assess the microbiome in nasopharyngeal swabs obtained from patients with COVID-19 by the ISARIC 4C consortium.

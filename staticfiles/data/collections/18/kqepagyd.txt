@@ -1,0 +1,1 @@
+We argue that there is a link between implicit computational complexity theory and the theory of reversible computation. We show that the complexity classes [Formula: see text] and [Formula: see text] can be captured by inherently reversible programming languages.

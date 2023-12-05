@@ -1,0 +1,1 @@
+A model of reactive social distancing in epidemics is proposed, in which the infection rate changes with the number infected. The final-size equation for the total number that the epidemic will infect can be derived analytically, as can the peak infection proportion. This model could assist planners during for example the COVID-19 pandemic.

@@ -1,0 +1,1 @@
+In this paper, we have applied the logistic growth regression model and genetic algorithm to predict the number of coronavirus infected cases that can be expected in upcoming days in India and also estimated the final size and its peak time of the coronavirus epidemic in India.
