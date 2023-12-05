@@ -6,6 +6,7 @@ from main.compression import VBEPostings
 from main.letor import Letor
 from tqdm import tqdm
 
+from django.shortcuts import redirect
 from django.core.paginator import Paginator
 
 # sebelumnya sudah dilakukan indexing
@@ -21,6 +22,7 @@ def search(request):
     context = {}
     if request.method == 'GET':
         query = request.GET.get('q')
+        # print(f'Q: {query}')
 
         if query:
             rank_bm25 = []
@@ -74,7 +76,8 @@ def search(request):
 
             return render(request, 'search_result.html', context)
 
-    return render(request, 'home.html')
+    # return render(request, 'home.html')
+    return redirect('main:home')
 
 def detail(request, path):
     context = {}
