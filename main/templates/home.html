@@ -10,20 +10,27 @@ Home
 {% endblock title %}
 
 {% block content %}
-<div class="d-flex flex-column flex-fill p-5 align-items-center justify-content-center">
+<div class="d-flex flex-column flex-fill p-5 align-items-center justify-content-center bg-light grid gap-3">
 
     <div class="d-flex flex-column align-items-center justify-content-center">
         <h1 class="text-center">COVID-19 Information Center</h1>
         <p class="text-center">Your reliable source of information for COVID-19 related needs!</p>
     </div>
 
-    <form action="{% url 'main:search' %}" method="GET" class="d-flex">
-        <div class="d-flex flex-row grid gap-3">
-            <input type="text" class="form-control" name="q" placeholder="Search here" aria-label="Search here"
-                aria-describedby="basic-addon2">
+    <form action="{% url 'main:search' %}" method="GET" class="w-50 d-flex align-items-center">
+        <div class="d-flex flex-row align-self-center grid gap-3 flex-fill">
+            <input type="text" class="flex-fill form-control" name="q" placeholder="Search here"
+                aria-label="Search here" aria-describedby="basic-addon2">
             <button type="submit" class="btn btn-primary">Search</button>
         </div>
     </form>
+
+    {% if request.GET.q == '' %}
+    <!-- Alert to show when input is empty -->
+    <div class="alert alert-danger py-2 px-4" role="alert">
+        Search query is empty. Please put your search query into the input above.
+    </div>
+    {% endif %}
 
 </div>
 {% endblock content %}

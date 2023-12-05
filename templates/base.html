@@ -29,12 +29,13 @@
 
         <header class="d-flex px-5 py-3 align-items-center justify-content-between bg-dark text-light sticky-top">
 
-            <h3>Covic</h3>
-            <nav class="grid column-gap-3">
-                <a class="text-light link-light link-underline-opacity-0 link-underline-opacity-100-hover"
-                    href="/html/">Search</a>
-                <!-- <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                href="/html/">The Devs!</a> -->
+            <a class="h3 link-light link-underline-opacity-0 link-underline-opacity-100-hover"
+                href="{% url 'main:home' %}">covic</a>
+            <nav class="d-flex grid gap-5">
+                <a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
+                    href="{% url 'main:about' %}">About</a>
+                <a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
+                    href="{% url 'main:home' %}">Search</a>
             </nav>
 
         </header>
@@ -44,37 +45,13 @@
 
         <footer class="d-flex flex-row px-5 py-3 align-self-stretch justify-content-between bg-dark">
 
-            <!-- <ul class="nav justify-content-center mb-3">
-
-                <div class="nav-item px-2 d-flex flex-column align-items-center">
-                    <li class="text-light">
-                        <span class="fw-bold">Dimas Ilham Danesamarruf</span>
-                    </li>
-                    <li class="text-light">
-                        (<a class="link-opacity-100" href="https://www.linkedin.com/in/dimas-id/">LinkedIn</a>,
-                        <a class="link-opacity-100" href="https://github.com/dimas-id">GitHub</a>)
-                    </li>
-                </div>
-
-                <div class="nav-item px-2 d-flex flex-column align-items-center">
-                    <li class="text-light">
-                        <span class="fw-bold">Rizky Juniastiar</span>
-                    </li>
-                    <li class="text-light">
-                        (<a class="link-opacity-100" href="https://www.linkedin.com/in/rizkyjuniastiar/">LinkedIn</a>,
-                        <a class="link-opacity-100" href="https://github.com/rizkyyjun">GitHub</a>)
-                    </li>
-                </div>
-
-            </ul> -->
-
             <p class="text-light">Made with 🔥🔥🔥 by
                 <a class="fw-bold link-light link-underline-opacity-0 link-underline-opacity-100-hover"
                     href="https://www.linkedin.com/in/dimas-id/">Dimas</a>
                 and <a class="fw-bold link-light link-underline-opacity-0 link-underline-opacity-100-hover"
                     href="https://www.linkedin.com/in/rizkyjuniastiar/">Rizky</a>
             </p>
-            <p class="text-light text-opacity-50 text-right">© Information Retrieval Course, Fasilkom UI 2023/2024</p>
+            <p class="text-light text-opacity-50 text-end">© Information Retrieval Course, Fasilkom UI 2023/2024</p>
 
         </footer>
     </div>

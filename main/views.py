@@ -85,3 +85,5 @@ def detail(request, path):
     context['text'] = text
     return render(request, 'detail_doc.html', context)
     
+def about(request):
+    return render(request, 'about.html')

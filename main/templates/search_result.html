@@ -9,15 +9,15 @@ covic: {{query}}
 {% endblock title %}
 
 {% block content %}
-<div class="d-flex flex-column flex-fill p-5 align-items-center justify-content-start grid gap-3">
+<div class="d-flex flex-column flex-fill p-5 align-items-center justify-content-start grid gap-3 bg-light w-100">
 
     {% if not result %}
 
-    <div class="d-flex flex-column grid gap-5 align-items-center">
-        <form action="{% url 'main:search' %}" method="GET" class="d-flex">
-            <div class="d-flex flex-row grid gap-2">
-                <input type="text" class="form-control" name="q" value="{{query}}" placeholder="Search here"
-                    aria-label="Search here" aria-describedby="basic-addon2">
+    <div class="d-flex flex-column grid gap-5 align-items-center align-self-stretch">
+        <form action="{% url 'main:search' %}" method="GET" class="w-50 d-flex align-items-center">
+            <div class="d-flex flex-row align-self-center grid gap-3 flex-fill">
+                <input type="text" class="flex-fill form-control" name="q" placeholder="Search here"
+                    aria-label="Search here" aria-describedby="basic-addon2" value="{{query}}">
                 <button type="submit" class="btn btn-primary">Search</button>
             </div>
         </form>
@@ -26,11 +26,11 @@ covic: {{query}}
 
     {% else %}
 
-    <div class="d-flex flex-column grid gap-3 align-items-center">
-        <form action="{% url 'main:search' %}" method="GET" class="d-flex">
-            <div class="d-flex flex-row grid gap-2">
-                <input type="text" class="form-control" name="q" value="{{query}}" placeholder="Search here"
-                    aria-label="Search here" aria-describedby="basic-addon2">
+    <div class="d-flex flex-column grid gap-3 align-items-center  align-self-stretch">
+        <form action="{% url 'main:search' %}" method="GET" class="w-50 d-flex align-items-center">
+            <div class="d-flex flex-row align-self-center grid gap-3 flex-fill">
+                <input type="text" class="flex-fill form-control" name="q" placeholder="Search here"
+                    aria-label="Search here" aria-describedby="basic-addon2" value="{{query}}">
                 <button type="submit" class="btn btn-primary">Search</button>
             </div>
         </form>
