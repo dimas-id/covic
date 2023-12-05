@@ -19,7 +19,7 @@ Home
 
     <form action="{% url 'main:search' %}" method="GET" class="d-flex">
         <div class="d-flex flex-row grid gap-2">
-            <input type="text" class="form-control" placeholder="Search here" aria-label="Search here"
+            <input type="text" class="form-control" name="q" placeholder="Search here" aria-label="Search here"
                 aria-describedby="basic-addon2">
             <button type="submit" class="btn btn-primary">Search</button>
         </div>
