@@ -74,8 +74,14 @@ def search(request):
 
             return render(request, 'search_result.html', context)
 
-    return render(request, 'home.html', context)
+    return render(request, 'home.html')
 
 def detail(request, path):
     context = {}
+    title = path.split('/')[-1].replace('.txt', '')
+    with open(f'main/static/data/{path}', 'r', encoding='utf-8') as file:
+        text = file.read()
+    context['title'] = title
+    context['text'] = text
+    return render(request, 'detail_doc.html', context)
     
