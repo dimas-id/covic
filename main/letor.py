@@ -150,9 +150,10 @@ if __name__ == "__main__":
     # Contoh pemanggilan letor (sesuai dengan tutorial notebook letor)
 
     current_directory = os.path.dirname(os.path.abspath(__file__))
-    # print(current_directory)
-    train_docs_path = os.path.join(current_directory,"static/data/tes_merge_0.txt")
-    # print(train_docs_path)
+    print(current_directory)
+    # train_docs_path = os.path.join(current_directory,"static/data/tes_merge_0.txt")
+    train_docs_path = os.path.join(current_directory,"static/data/docs.txt")
+    print(train_docs_path)
     train_queries_path = os.path.join(current_directory,"static/data/queries.txt")
     train_qrels_path = os.path.join(current_directory,"static/data/qrels.txt")
 
@@ -161,7 +162,7 @@ if __name__ == "__main__":
     letor = Letor(train_docs_path, train_queries_path, train_qrels_path)
     ranker = letor.train_letor(save_model_path=model_path)
 
-
+    letor = Letor(train_docs_path, train_queries_path, train_qrels_path)
     letor.load_model(model_path=model_path)
     # with open(model_path, 'rb') as file:
     #         ranker = pickle.load(file)
