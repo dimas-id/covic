@@ -25,33 +25,55 @@
 
 <body>
 
-    {% block content %}
-    {% endblock content %}
+    <div class="d-flex flex-column align-self-stretch justify-content-between">
 
-    <footer>
-        <div style="min-height: 20px;"></div>
-        <hr>
-        <ul class="nav justify-content-center mb-3">
+        <header class="d-flex flex-fill px-5 py-3 align-items-center justify-content-between bg-dark text-light">
 
-            <div class="nav-item px-2 d-flex flex-column align-items-center mb-3">
-                <li class="">Dimas Ilham Danesamarruf</li>
-                <li class="">
-                    (<a class="link-opacity-100" href="https://www.linkedin.com/in/dimas-id/">LinkedIn</a>,
-                    <a class="link-opacity-100" href="https://github.com/dimas-id">GitHub</a>)
-                </li>
-            </div>
+            <h3>Covic</h3>
+            <nav class="grid column-gap-3">
+                <a class="text-light link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                    href="/html/">Search</a>
+                <!-- <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                href="/html/">The Devs!</a> -->
+            </nav>
 
-            <div class="nav-item px-2 d-flex flex-column align-items-center mb-3">
-                <li class="">Rizky Juniastiar</li>
-                <li class="">
-                    (<a class="link-opacity-100" href="https://www.linkedin.com/in/rizkyjuniastiar/">LinkedIn</a>,
-                    <a class="link-opacity-100" href="https://github.com/rizkyyjun">GitHub</a>)
-                </li>
-            </div>
+        </header>
 
-        </ul>
-        <p class="text-center text-muted">© Information Retrieval Course 2023/2024</p>
-    </footer>
+        {% block content %}
+        {% endblock content %}
+
+        <footer class="flex-fill bg-dark pt-2 text-light border-top border-light">
+
+            <!-- <hr class="border border-1 opacity-50"> -->
+
+            <ul class="nav justify-content-center mb-3">
+
+                <div class="nav-item px-2 d-flex flex-column align-items-center">
+                    <li class="text-light">
+                        <span class="fw-bold">Dimas Ilham Danesamarruf</span>
+                    </li>
+                    <li class="text-light">
+                        (<a class="link-opacity-100" href="https://www.linkedin.com/in/dimas-id/">LinkedIn</a>,
+                        <a class="link-opacity-100" href="https://github.com/dimas-id">GitHub</a>)
+                    </li>
+                </div>
+
+                <div class="nav-item px-2 d-flex flex-column align-items-center">
+                    <li class="text-light">
+                        <span class="fw-bold">Rizky Juniastiar</span>
+                    </li>
+                    <li class="text-light">
+                        (<a class="link-opacity-100" href="https://www.linkedin.com/in/rizkyjuniastiar/">LinkedIn</a>,
+                        <a class="link-opacity-100" href="https://github.com/rizkyyjun">GitHub</a>)
+                    </li>
+                </div>
+
+            </ul>
+
+            <p class="text-light text-center text-muted">© Information Retrieval Course, Fasilkom UI 2023/2024</p>
+
+        </footer>
+    </div>
 
 </body>
 
