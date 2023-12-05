@@ -2,12 +2,57 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COVIC</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    {% block head %}
+    {% endblock head %}
+
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+
 </head>
+
 <body>
-    
+
+    {% block content %}
+    {% endblock content %}
+
+    <footer>
+        <div style="min-height: 20px;"></div>
+        <hr>
+        <ul class="nav justify-content-center mb-3">
+
+            <div class="nav-item px-2 d-flex flex-column align-items-center mb-3">
+                <li class="">Dimas Ilham Danesamarruf</li>
+                <li class="">
+                    (<a class="link-opacity-100" href="https://www.linkedin.com/in/dimas-id/">LinkedIn</a>,
+                    <a class="link-opacity-100" href="https://github.com/dimas-id">GitHub</a>)
+                </li>
+            </div>
+
+            <div class="nav-item px-2 d-flex flex-column align-items-center mb-3">
+                <li class="">Rizky Juniastiar</li>
+                <li class="">
+                    (<a class="link-opacity-100" href="https://www.linkedin.com/in/rizkyjuniastiar/">LinkedIn</a>,
+                    <a class="link-opacity-100" href="https://github.com/rizkyyjun">GitHub</a>)
+                </li>
+            </div>
+
+        </ul>
+        <p class="text-center text-muted">© Information Retrieval Course 2023/2024</p>
+    </footer>
+
 </body>
+
 </html>

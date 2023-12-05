@@ -1,0 +1,200 @@
+1 what is the origin of COVID-19
+2 how does the coronavirus respond to changes in the weather
+3 will SARS-CoV2 infected people develop immunity? Is cross protection possible?
+4 what causes death from Covid-19?
+5 what drugs have been active against SARS-CoV or SARS-CoV-2 in animal studies?
+6 what types of rapid testing for Covid-19 have been developed?
+7 are there serological tests that detect antibodies to coronavirus?
+8 how has lack of testing availability led to underreporting of true incidence of Covid-19?
+9 how has COVID-19 affected Canada
+10 has social distancing had an impact on slowing the spread of COVID-19?
+11 what are the guidelines for triaging patients infected with coronavirus?
+12 what are best practices in hospitals and at home in maintaining quarantine?
+13 what are the transmission routes of coronavirus?
+14 what evidence is there related to COVID-19 super spreaders
+15 how long can the coronavirus live outside the body
+16 how long does coronavirus remain stable  on surfaces?
+17 are there any clinical trials available for the coronavirus
+18 what are the best masks for preventing infection by Covid-19?
+19 what type of hand sanitizer is needed to destroy Covid-19?
+20 are patients taking Angiotensin-converting enzyme inhibitors (ACE) at increased risk for COVID-19?
+21 what are the mortality rates overall and in specific populations
+22 are cardiac complications likely in patients with COVID-19?
+23 what kinds of complications related to COVID-19 are associated with hypertension?
+24 what kinds of complications related to COVID-19 are associated with diabetes
+25 which biomarkers predict the severe clinical course of 2019-nCOV infection?
+26 what are the initial symptoms of Covid-19?
+27 what is known about those infected with Covid-19 but are asymptomatic?
+28 what evidence is there for the value of hydroxychloroquine in treating Covid-19?
+29 which SARS-CoV-2 proteins-human proteins interactions indicate potential for drug targets. Are there approved drugs that can be repurposed based on this information?
+30 is remdesivir an effective treatment for COVID-19
+31 what is the origin of COVID-19
+32 how does the coronavirus respond to changes in the weather
+33 will SARS-CoV2 infected people develop immunity? Is cross protection possible?
+34 what causes death from Covid-19?
+35 what drugs have been active against SARS-CoV or SARS-CoV-2 in animal studies?
+36 what types of rapid testing for Covid-19 have been developed?
+37 are there serological tests that detect antibodies to coronavirus?
+38 how has lack of testing availability led to underreporting of true incidence of Covid-19?
+39 how has COVID-19 affected Canada
+40 has social distancing had an impact on slowing the spread of COVID-19?
+41 what are the guidelines for triaging patients infected with coronavirus?
+42 what are best practices in hospitals and at home in maintaining quarantine?
+43 what are the transmission routes of coronavirus?
+44 what evidence is there related to COVID-19 super spreaders
+45 how long can the coronavirus live outside the body
+46 how long does coronavirus remain stable  on surfaces?
+47 are there any clinical trials available for the coronavirus
+48 what are the best masks for preventing infection by Covid-19?
+49 what type of hand sanitizer is needed to destroy Covid-19?
+50 are patients taking Angiotensin-converting enzyme inhibitors (ACE) at increased risk for COVID-19?
+51 what are the mortality rates overall and in specific populations
+52 are cardiac complications likely in patients with COVID-19?
+53 what kinds of complications related to COVID-19 are associated with hypertension?
+54 what kinds of complications related to COVID-19 are associated with diabetes
+55 which biomarkers predict the severe clinical course of 2019-nCOV infection?
+56 what are the initial symptoms of Covid-19?
+57 what is known about those infected with Covid-19 but are asymptomatic?
+58 what evidence is there for the value of hydroxychloroquine in treating Covid-19?
+59 which SARS-CoV-2 proteins-human proteins interactions indicate potential for drug targets. Are there approved drugs that can be repurposed based on this information?
+60 is remdesivir an effective treatment for COVID-19
+61 How does the coronavirus differ from seasonal flu?
+62 Does SARS-CoV-2 have any subtypes, and if so what are they?
+63 What vaccine candidates are being tested for Covid-19?
+64 What are the longer-term complications of those who recover from COVID-19?
+65 What new public datasets are available related to COVID-19?
+66 what is the origin of COVID-19
+67 how does the coronavirus respond to changes in the weather
+68 will SARS-CoV2 infected people develop immunity? Is cross protection possible?
+69 what causes death from Covid-19?
+70 what drugs have been active against SARS-CoV or SARS-CoV-2 in animal studies?
+71 what types of rapid testing for Covid-19 have been developed?
+72 are there serological tests that detect antibodies to coronavirus?
+73 how has lack of testing availability led to underreporting of true incidence of Covid-19?
+74 how has COVID-19 affected Canada
+75 has social distancing had an impact on slowing the spread of COVID-19?
+76 what are the guidelines for triaging patients infected with coronavirus?
+77 what are best practices in hospitals and at home in maintaining quarantine?
+78 what are the transmission routes of coronavirus?
+79 what evidence is there related to COVID-19 super spreaders
+80 how long can the coronavirus live outside the body
+81 how long does coronavirus remain stable  on surfaces?
+82 are there any clinical trials available for the coronavirus
+83 what are the best masks for preventing infection by Covid-19?
+84 what type of hand sanitizer is needed to destroy Covid-19?
+85 are patients taking Angiotensin-converting enzyme inhibitors (ACE) at increased risk for COVID-19?
+86 what are the mortality rates overall and in specific populations
+87 are cardiac complications likely in patients with COVID-19?
+88 what kinds of complications related to COVID-19 are associated with hypertension?
+89 what kinds of complications related to COVID-19 are associated with diabetes
+90 which biomarkers predict the severe clinical course of 2019-nCOV infection?
+91 what are the initial symptoms of Covid-19?
+92 what is known about those infected with Covid-19 but are asymptomatic?
+93 what evidence is there for the value of hydroxychloroquine in treating Covid-19?
+94 which SARS-CoV-2 proteins-human proteins interactions indicate potential for drug targets. Are there approved drugs that can be repurposed based on this information?
+95 is remdesivir an effective treatment for COVID-19
+96 How does the coronavirus differ from seasonal flu?
+97 Does SARS-CoV-2 have any subtypes, and if so what are they?
+98 What vaccine candidates are being tested for Covid-19?
+99 What are the longer-term complications of those who recover from COVID-19?
+100 What new public datasets are available related to COVID-19?
+101 What is the protein structure of the SARS-CoV-2 spike?
+102 What is the result of phylogenetic analysis of SARS-CoV-2 genome sequence?
+103 What is the mechanism of inflammatory response and pathogenesis of COVID-19 cases?
+104 What is the mechanism of cytokine storm syndrome on the COVID-19?
+105 What are the observed mutations in the SARS-CoV-2 genome and how often do the mutations occur?
+106 what is the origin of COVID-19
+107 how does the coronavirus respond to changes in the weather
+108 will SARS-CoV2 infected people develop immunity? Is cross protection possible?
+109 what causes death from Covid-19?
+110 what drugs have been active against SARS-CoV or SARS-CoV-2 in animal studies?
+111 what types of rapid testing for Covid-19 have been developed?
+112 are there serological tests that detect antibodies to coronavirus?
+113 how has lack of testing availability led to underreporting of true incidence of Covid-19?
+114 how has COVID-19 affected Canada
+115 has social distancing had an impact on slowing the spread of COVID-19?
+116 what are the guidelines for triaging patients infected with coronavirus?
+117 what are best practices in hospitals and at home in maintaining quarantine?
+118 what are the transmission routes of coronavirus?
+119 what evidence is there related to COVID-19 super spreaders
+120 how long can the coronavirus live outside the body
+121 how long does coronavirus remain stable  on surfaces?
+122 are there any clinical trials available for the coronavirus
+123 what are the best masks for preventing infection by Covid-19?
+124 what type of hand sanitizer is needed to destroy Covid-19?
+125 are patients taking Angiotensin-converting enzyme inhibitors (ACE) at increased risk for COVID-19?
+126 what are the mortality rates overall and in specific populations
+127 are cardiac complications likely in patients with COVID-19?
+128 what kinds of complications related to COVID-19 are associated with hypertension?
+129 what kinds of complications related to COVID-19 are associated with diabetes
+130 which biomarkers predict the severe clinical course of 2019-nCOV infection?
+131 what are the initial symptoms of Covid-19?
+132 what is known about those infected with Covid-19 but are asymptomatic?
+133 what evidence is there for the value of hydroxychloroquine in treating Covid-19?
+134 which SARS-CoV-2 proteins-human proteins interactions indicate potential for drug targets. Are there approved drugs that can be repurposed based on this information?
+135 is remdesivir an effective treatment for COVID-19
+136 How does the coronavirus differ from seasonal flu?
+137 Does SARS-CoV-2 have any subtypes, and if so what are they?
+138 What vaccine candidates are being tested for Covid-19?
+139 What are the longer-term complications of those who recover from COVID-19?
+140 What new public datasets are available related to COVID-19?
+141 What is the protein structure of the SARS-CoV-2 spike?
+142 What is the result of phylogenetic analysis of SARS-CoV-2 genome sequence?
+143 What is the mechanism of inflammatory response and pathogenesis of COVID-19 cases?
+144 What is the mechanism of cytokine storm syndrome on the COVID-19?
+145 What are the observed mutations in the SARS-CoV-2 genome and how often do the mutations occur?
+146 What are the impacts of COVID-19 among African-Americans that differ from the rest of the U.S. population?
+147 Does Vitamin D impact COVID-19 prevention and treatment?
+148 How has the COVID-19 pandemic impacted violence in society, including violent crimes?
+149 How much impact do masks have on preventing the spread of the COVID-19?
+150 How has the COVID-19 pandemic impacted mental health?
+151 what is the origin of COVID-19
+152 how does the coronavirus respond to changes in the weather
+153 will SARS-CoV2 infected people develop immunity? Is cross protection possible?
+154 what causes death from Covid-19?
+155 what drugs have been active against SARS-CoV or SARS-CoV-2 in animal studies?
+156 what types of rapid testing for Covid-19 have been developed?
+157 are there serological tests that detect antibodies to coronavirus?
+158 how has lack of testing availability led to underreporting of true incidence of Covid-19?
+159 how has COVID-19 affected Canada
+160 has social distancing had an impact on slowing the spread of COVID-19?
+161 what are the guidelines for triaging patients infected with coronavirus?
+162 what are best practices in hospitals and at home in maintaining quarantine?
+163 what are the transmission routes of coronavirus?
+164 what evidence is there related to COVID-19 super spreaders
+165 how long can the coronavirus live outside the body
+166 how long does coronavirus remain stable  on surfaces?
+167 are there any clinical trials available for the coronavirus
+168 what are the best masks for preventing infection by Covid-19?
+169 what type of hand sanitizer is needed to destroy Covid-19?
+170 are patients taking Angiotensin-converting enzyme inhibitors (ACE) at increased risk for COVID-19?
+171 what are the mortality rates overall and in specific populations
+172 are cardiac complications likely in patients with COVID-19?
+173 what kinds of complications related to COVID-19 are associated with hypertension?
+174 what kinds of complications related to COVID-19 are associated with diabetes
+175 which biomarkers predict the severe clinical course of 2019-nCOV infection?
+176 what are the initial symptoms of Covid-19?
+177 what is known about those infected with Covid-19 but are asymptomatic?
+178 what evidence is there for the value of hydroxychloroquine in treating Covid-19?
+179 which SARS-CoV-2 proteins-human proteins interactions indicate potential for drug targets. Are there approved drugs that can be repurposed based on this information?
+180 is remdesivir an effective treatment for COVID-19
+181 How does the coronavirus differ from seasonal flu?
+182 Does SARS-CoV-2 have any subtypes, and if so what are they?
+183 What vaccine candidates are being tested for Covid-19?
+184 What are the longer-term complications of those who recover from COVID-19?
+185 What new public datasets are available related to COVID-19?
+186 What is the protein structure of the SARS-CoV-2 spike?
+187 What is the result of phylogenetic analysis of SARS-CoV-2 genome sequence?
+188 What is the mechanism of inflammatory response and pathogenesis of COVID-19 cases?
+189 What is the mechanism of cytokine storm syndrome on the COVID-19?
+190 What are the observed mutations in the SARS-CoV-2 genome and how often do the mutations occur?
+191 What are the impacts of COVID-19 among African-Americans that differ from the rest of the U.S. population?
+192 Does Vitamin D impact COVID-19 prevention and treatment?
+193 How has the COVID-19 pandemic impacted violence in society, including violent crimes?
+194 How much impact do masks have on preventing the spread of the COVID-19?
+195 How has the COVID-19 pandemic impacted mental health?
+196 what evidence is there for dexamethasone as a treatment for COVID-19?
+197 what are the health outcomes for children who contract COVID-19?
+198 what are the benefits and risks of re-opening schools in the midst of the COVID-19 pandemic?
+199 do individuals who recover from COVID-19 show sufficient immune response, including antibody levels and T-cell mediated immunity, to prevent re-infection?
+200 what is known about an mRNA vaccine for the SARS-CoV-2 virus?
