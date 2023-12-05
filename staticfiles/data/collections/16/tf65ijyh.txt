@@ -1,0 +1,1 @@
+This paper presents a method of controlling the arterial carbon dioxide tension of patients receiving mechanical ventilation. Controlling of the CO(2) tension is achieved by regulating the ventilator initiated breath frequency and also volume per breath.

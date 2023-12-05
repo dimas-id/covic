@@ -1,0 +1,1 @@
+In this research, an ARFIMA model is proposed to forecast new COVID-19 cases in Algeria two weeks ahead. In the present study, public health database from Algeria health ministry has been used to build an ARFIMA model and used to forecast COVID-19 new cases in Algeria until May 11, 2020.

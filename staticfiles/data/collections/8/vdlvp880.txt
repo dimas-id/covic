@@ -1,0 +1,1 @@
+A time series analysis of 871,543 pediatric emergency visits revealed that the COVID-19 lockdown and school closure were associated with a significant decrease in infectious diseases disseminated through airborne or fecal-oral transmissions: common cold, gastro-enteritis, bronchiolitis, acute otitis. No change was found for urinary tract infections.

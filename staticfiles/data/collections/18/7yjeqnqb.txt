@@ -1,0 +1,1 @@
+It was the eminent mathematician Daniel Bernoulli (Bernoulli, Mémoires de l’Académie Royale des Sciences – Histoire Année, Imprimerie Royale, Paris, 1766) from Basel who had the idea of describing the development of an epidemic using a differential equation, in particular with the aim of showing how the epidemic could be mitigated by vaccination.

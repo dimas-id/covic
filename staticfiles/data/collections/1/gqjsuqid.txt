@@ -1,0 +1,1 @@
+We prove that the unification type of Łukasiewicz logic with a finite number of variables is either infinitary or nullary. To achieve this result we use Ghilardi’s categorical characterisation of unification types in terms of projective objects, the categorical duality between finitely presented MV-algebras and rational polyhedra, and a homotopy-theoretic argument.

@@ -1,0 +1,1 @@
+Fitting transmission models to outbreak data allows key epidemiological parameters to be estimated and the impact of control measures to be evaluated. Christl Donnelly and Azra Ghani describe the use of such models in the 2003 SARS epidemic in Hong Kong.

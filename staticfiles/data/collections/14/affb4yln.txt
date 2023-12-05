@@ -1,0 +1,1 @@
+The National COVID-19 Chest Imaging Database (NCCID) is a repository of chest X-Ray, CT and MRI images and clinical data from COVID-19 patients across the UK, to support research and development of AI technology that may proffer insights into the disease.

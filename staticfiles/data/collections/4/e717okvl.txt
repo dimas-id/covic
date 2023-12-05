@@ -1,0 +1,1 @@
+This work shows an approach to reduce the dimensionality of matrix representations of quantum channels. It is achieved by finding a base of the cone of positive semidefinite matrices which represent quantum channels. Next, this is implemented in the Julia programming language as a part of the QuantumInformation.jl package.

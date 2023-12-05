@@ -1,0 +1,1 @@
+Several qPCR kits are available for SARS-CoV-2 diagnosis, mostly lacking of evaluation due to covid19 emergency. We evaluated nCoV-QS (MiCo BioMed) kit using CDC kit as gold standard. We found limitations for nCoV-QS: 1) lower sensibility 2) lack of RNA quality control probe 3) no capacity to quantify viral load.

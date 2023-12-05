@@ -1,0 +1,1 @@
+The potential for transmission of SARS-CoV-2 shed in stool via fecal microbiota transplantation is not yet known, and the effectiveness of various testing strategies to prevent FMT-based transmission has also not yet been quantified. Here we use a mathematical model to simulate the utility of different testing strategies.

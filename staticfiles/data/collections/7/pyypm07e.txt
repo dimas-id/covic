@@ -1,0 +1,1 @@
+This technical report presents information related to the Social Isolation Index (SII) of the city of Caruaru, Pernambuco, Brazil. The data was provided by In Loco, a technology startup that has collected the movement of around 60 million Brazilians through cell phone location.

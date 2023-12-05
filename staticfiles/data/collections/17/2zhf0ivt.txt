@@ -1,0 +1,1 @@
+Regular graphs which are Bonnet-Myers sharp (in the sense of Ollivier Ricci curvature) and self-centered have been completely classified, and it is a natural question whether the condition of self-centeredness can be removed in the classification. We prove that this condition is indeed not necessary in the special case of Bonnet-Myers sharp graphs of diameter 3.

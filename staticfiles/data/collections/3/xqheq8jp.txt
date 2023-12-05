@@ -1,0 +1,1 @@
+We describe the implementation of algebraic polyhedra in Normaliz. In addition to convex hull computation/vertex enumeration, Normaliz computes triangulations, volumes, lattice points, face lattices and automorphism groups. The arithmetic is based on the package e-antic by V. Delecroix.

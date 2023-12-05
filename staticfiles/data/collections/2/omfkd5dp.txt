@@ -1,0 +1,1 @@
+This document presents the Thing Description ontology, an axiomatization of the W3C Thing Description model. It also introduces an alignment with the Semantic Sensor Network ontology and evaluates how this alignment contributes to semantic interoperability in the Web of Things.

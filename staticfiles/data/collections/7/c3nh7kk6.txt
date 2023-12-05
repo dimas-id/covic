@@ -1,0 +1,1 @@
+In addition to instituting public health measures for COVID-19, managing healthcare resources is important for outcomes. The experiences in Italy and New York have shown that personal protective equipment (PPE) shortages can cause increased morbidity and mortality. We demonstrate a method to predict PPE demand across a health care system.

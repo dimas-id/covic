@@ -1,0 +1,1 @@
+Many severe acute respiratory syndrome (SARS) patients have multiple possible incubation periods due to multiple contact dates. Multiple contact dates cannot be used in standard statistical analytic techniques, however. I present a simple spreadsheet-based method that uses multiple contact dates to calculate the possible incubation periods of SARS.

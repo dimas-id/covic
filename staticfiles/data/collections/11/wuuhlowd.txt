@@ -1,0 +1,1 @@
+A specific feature in the Finnish pension system is rule-based preparation for mortality change. The earned pension capital is adjusted to life expectancy and the lowest age limit of the flexible retirement age will be adapted so that the ratio of expected years in employment and retirement is fixed after year 2030.

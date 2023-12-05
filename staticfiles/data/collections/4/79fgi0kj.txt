@@ -1,0 +1,1 @@
+A model to predict hospital bed requirements six weeks in advance to treat Covid-19 patients in California is presented. The model also gives prediction for number of cases and deaths during the same period. The model is versatile and can be applied to other countries and regions as well.

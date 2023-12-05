@@ -1,0 +1,1 @@
+We use an extension of quadratic Chabauty to number fields, recently developed by the author with Balakrishnan, Besser and Müller, combined with a sieving technique, to determine the integral points over [Image: see text] on the Mordell curve [Formula: see text].

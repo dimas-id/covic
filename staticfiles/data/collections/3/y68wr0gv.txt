@@ -1,0 +1,1 @@
+We adopt a supervised learning framework, namely R-LTR [17], to diversify image search results, and extend it in various ways. Our experiments show that the adopted and proposed variants are superior to two well-known baselines, with relative gains up to 11.4%.

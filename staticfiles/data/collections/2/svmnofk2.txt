@@ -1,0 +1,1 @@
+Since 2012, web based notebooks have been used as interface for computer algebra systems in teaching mathematics courses at Universidad de Zaragoza. We present an overview of the experience, detailing the advantages and problems that have been noticed during this time.

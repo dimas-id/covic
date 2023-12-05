@@ -1,0 +1,1 @@
+We estimate a VAR with world-level variables to simulate the effects of the Covid-19 outbreak-related uncertainty shock. We find a peak (cumulative over one year) negative response of world output of 1.6% (14%).

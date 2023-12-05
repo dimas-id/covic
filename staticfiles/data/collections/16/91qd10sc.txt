@@ -1,0 +1,1 @@
+We present the Julia interface [Image: see text] to polymake, a software for research in polyhedral geometry. We describe the technical design and how the integration into Julia makes it possible to combine polymake with state-of-the-art numerical software.

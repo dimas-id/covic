@@ -1,0 +1,1 @@
+Here we report on an inpatient cohort of COVID-19 positive patients where plasma cytokines were tested for association with future need for mechanical ventilation. Hierarchical clustering, Kaplan-Meier curves, and odds ratios demonstrated that two cytokines, IL-13 (OR: 1.57) and IL-7 (OR: 1.04) and the growth factor bFGF (OR: 1.04), were predictive for intubation.

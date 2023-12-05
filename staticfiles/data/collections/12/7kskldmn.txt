@@ -1,0 +1,1 @@
+Abstract Artificial Intelligence (AI) is a broad conceptual category of computer software that is designed to mimic, emulate, or improve human decision-making. There are two broad categories of AI: rules-based expert systems (ES), and machine-learning (ML) systems.

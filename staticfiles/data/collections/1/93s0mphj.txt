@@ -1,0 +1,1 @@
+We analyzed the whole-genome sequence of African swine fever virus Belgium 2018/1. The strain fits into the European genotype II (>99.98% identity). The high-coverage sequence revealed 15 differences compared with an improved African swine fever virus Georgia 2007/1 sequence. However, in the absence of genetic markers, no spatial or temporal correlations could be defined.

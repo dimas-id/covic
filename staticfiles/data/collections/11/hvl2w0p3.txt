@@ -1,0 +1,1 @@
+We propose a linear model of infection probability, and prove that this is a good approximation to a more refined model in which we assume infections come from a series of independent risks. We argue that the linearity assumption makes interpreting and using the model much easier, without significantly diminishing the reliability of the model.

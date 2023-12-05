@@ -1,0 +1,1 @@
+In the paper, the authors consider a ratio of finite many gamma functions and find its monotonicity properties such as complete monotonicity, the Bernstein function property, and logarithmically complete monotonicity.

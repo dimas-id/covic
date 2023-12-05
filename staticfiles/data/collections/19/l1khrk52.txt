@@ -1,0 +1,1 @@
+Many attempts to control Complex adaptive systems (CAS) have failed. Here we try to learn from biosystems to derive some principles for CAS management. An application to managing infections is given.

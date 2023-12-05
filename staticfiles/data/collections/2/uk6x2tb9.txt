@@ -1,0 +1,1 @@
+The global spread of coronavirus disease 2019 has accelerated the adoption of technologies that facilitate patient care while reducing viral spread. We illustrate a proof of concept application of teleguidance to ultrasound-guided bedside procedures as an example of an innovative solution that has been used at our institution to maximize patient and provider safety.

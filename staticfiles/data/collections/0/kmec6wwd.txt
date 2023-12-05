@@ -1,0 +1,1 @@
+We generalize the classical sharp bounds for the largest eigenvalue of the normalized Laplace operator, $\frac{N}{N-1}\leq \lambda_N\leq 2$, to the case of chemical hypergraphs.

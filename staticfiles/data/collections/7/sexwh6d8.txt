@@ -1,0 +1,1 @@
+The present paper surveys some results from the inductive inference of recursive functions, which are related to the characterization of inferrible function classes in terms of complexity theory, and in terms of recursive numberings. Some new results and open problems are also included.

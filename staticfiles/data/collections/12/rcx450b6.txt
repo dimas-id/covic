@@ -1,0 +1,1 @@
+A yeast two-hybrid screening system was developed to screen for small molecules that inhibit the interaction of the Ras and the Raf proteins. Hyperpermeable yeast strains useful for high-throughput screening (HTS) for the two-hybrid system were created. Differential inhibition of the Ras-Raf vs the hsRPB4-hsRPB7 interaction allowed the identification of selective inhibitors.

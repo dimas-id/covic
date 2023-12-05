@@ -1,0 +1,1 @@
+Saliva samples were collected through a simple mouth wash procedure and viral load quantified using a technology called digital droplet PCR. Data suggest ddPCR is allows for precise quantification of viral load in clinical samples infected with SARS-CoV-2.

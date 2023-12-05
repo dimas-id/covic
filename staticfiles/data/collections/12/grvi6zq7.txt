@@ -1,0 +1,1 @@
+Each day, the New York City Department of Health and Mental Hygiene uses the free SaTScan software to apply prospective space-time permutation scan statistics to strengthen early outbreak detection for 35 reportable diseases. This method prompted early detection of outbreaks of community-acquired legionellosis and shigellosis.

@@ -1,0 +1,1 @@
+We exhibit a class of classical or tropical posynomial systems which can be solved by reduction to linear or convex programming problems. This relies on a notion of colorful vectors with respect to a collection of Newton polytopes. This extends the convex programming approach of one player stochastic games.

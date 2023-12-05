@@ -1,0 +1,1 @@
+We analyzed disease outcomes for patients with diabetes and laboratory-confirmed COVID-19 who were managed outpatient and followed by the Emory COVID-19 Virtual Outpatient Management Clinic (ECVOMC). The rate of hospitalization for patients with diabetes was double the overall rate of hospitalization for patients in the ECVOMC.

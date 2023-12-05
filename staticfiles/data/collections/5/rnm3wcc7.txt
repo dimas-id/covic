@@ -1,0 +1,1 @@
+Efficient response to the pandemic through the mobilization of the larger scientific community is challenged by the limited reusability of the available primary genomic data. Here, the Genomic Standards Consortium board highlights the essential need for contextual genomic data FAIRness, for empowering key data-driven biological questions.

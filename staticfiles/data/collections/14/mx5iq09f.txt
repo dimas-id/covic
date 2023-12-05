@@ -1,0 +1,1 @@
+Deep brain stimulation (DBS) is a neurosurgical treatment for neurological disorders often planned with 1.5-T or 3-T MRI. The clinical efficacy of DBS can be improved using ultrahigh-field (UHF) MRI for planning by increasing the level of precision required for an individualized approach.

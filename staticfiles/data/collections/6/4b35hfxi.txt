@@ -1,0 +1,1 @@
+With experience of Emergency Response System implement, the exist problem and research status in china is analyzed. Based on these conclusions, the Emergency Response System is constructed which used the J2EE tool, faced to small and medium-size cities, moreover, the research on key technologies related in this architecture are introduced in detail.

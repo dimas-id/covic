@@ -1,0 +1,1 @@
+We formalize the theory of forcing in the set theory framework of Isabelle/ZF. Under the assumption of the existence of a countable transitive model of [Formula: see text] , we construct a proper generic extension and show that the latter also satisfies [Formula: see text] . In doing so, we remodularized Paulson’s ZF-Constructibility library.

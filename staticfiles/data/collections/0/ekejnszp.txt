@@ -1,0 +1,1 @@
+We consider a simple model for the COVID-19 pandemic to analyse the relative effectiveness of several stages of the lockdown in Belgium, as well as of several phases of its relaxation. We also make a future projection of different types of measures relative to different stages of the already experienced lockdown.

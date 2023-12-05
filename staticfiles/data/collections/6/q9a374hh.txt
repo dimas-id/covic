@@ -1,0 +1,1 @@
+The spread of COVID-19 is expected to put a large strain on many hospital resources, including ICU bed space, and mortuary capacity. In this report we study the possible demands on ICU and mortuary capacity in Sydney, Australia, using an adapted SEIR epidemiological model.

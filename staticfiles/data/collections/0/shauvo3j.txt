@@ -1,0 +1,1 @@
+The possibility of the boundaries detection in the images of crushed ore particles using a convolutional neural network is analyzed. The structure of the neural network is given. The construction of training and test datasets of ore particle images is described. Various modifications of the underlying neural network have been investigated. Experimental results are presented.

@@ -1,0 +1,1 @@
+With good biological motivation, we add substitutions as a further type of operations to (in particular, context-free) insertion-deletion systems. This way, we obtain new characterizations of and normal forms for context-sensitive and recursively enumerable languages.

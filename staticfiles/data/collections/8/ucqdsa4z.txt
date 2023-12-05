@@ -1,0 +1,1 @@
+The testing capacity for SARS-CoV-2 using RT-PCR analyses can be substantially increased by using pooling techniques. Here we discuss two important consequences of this. First, prevalence estimation can be done with a very limited number of RT-PCR analysis. Second, for screening purposes, the number of detected cases can largely increased.

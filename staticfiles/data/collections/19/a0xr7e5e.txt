@@ -1,0 +1,1 @@
+Suppose we are given a collection of mathematical objects such as the class of connected compact Polish groups or the set of all real numbers which are normal to some base.

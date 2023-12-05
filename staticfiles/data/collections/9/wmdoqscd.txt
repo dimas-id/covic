@@ -1,0 +1,1 @@
+As the first wave of COVID-19 recedes, policymakers are contemplating the relaxation of shelter-in-place orders. Using a model capturing high-risk populations and transmission rates estimated from hospitalization data, we find that postponing relaxation will only delay a second wave and cocooning vulnerable populations is needed to prevent overwhelming medical surges.

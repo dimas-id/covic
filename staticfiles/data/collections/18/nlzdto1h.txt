@@ -1,0 +1,1 @@
+We investigate the transmissibility of coronavirus for symptomatic and asymptomatic patients using the Ningbo Covid-19 data1. Through more in-depth and comprehensive statistical analysis, we conclude that there is no difference in the transmission rates of coronavirus between the symptomatic and asymptomatic patients, which is consistent with the original findings in Chen et al.1

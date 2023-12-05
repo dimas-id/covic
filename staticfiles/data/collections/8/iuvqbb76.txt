@@ -1,0 +1,1 @@
+The paper gives a brief overview of the four shared tasks that are to be organized at the PAN 2020 lab on digital text forensics and stylometry, hosted at CLEF conference. The tasks include author profiling, celebrity profiling, cross-domain author verification, and style change detection, seeking to advance the state of the art and to evaluate it on new benchmark datasets.

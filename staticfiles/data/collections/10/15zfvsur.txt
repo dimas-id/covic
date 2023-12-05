@@ -1,0 +1,1 @@
+High mutation rates occurring during replication allow RNA viruses to evolve rapidly and adapt continuously to new environments. This poses an enormous challenge to vaccine and drug development which, to be effective, must consid RNA virus variability and follow approaches that minimize the probability of escape or resistant mutants arising.

@@ -1,0 +1,1 @@
+ABBREVIATIONS AACE = American Association of Clinical Endocrinologists ACE = American College of Endocrinology DKA = diabetic ketoacidosis EMA = European Medicines Agency FDA = U.S. Food and Drug Administration SGLT-2 = sodium glucosecotransporter 2 T1D = type 1 diabetes T2D = type 2 diabetes.

@@ -1,0 +1,1 @@
+This paper questions various claims from the paper "Social distancing strategies for curbing the COVID-19 epidemic" by Kissler, Tedijanto, Lipsitch, and Grad: most importantly, the claim that China's "intense" distancing measures achieved only a 60% reduction in R0.
