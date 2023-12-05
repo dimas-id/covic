@@ -23,11 +23,12 @@ def search(request):
             )
             result = []
             for score, doc in res_bm25:
-                doc = doc.replace('\\', '/')
-                with open(f'{doc}', 'r', encoding='utf-8') as f:
-                    text = f.read()
-                title = doc.split('/')[-1].replace('.txt','')
-                path = doc.find('collections')
+                print(f'score: {score}, doc: {doc}')
+                # doc = doc.replace('\\', '/')
+                # with open(f'{doc}', 'r', encoding='utf-8') as f:
+                #     text = f.read()
+                # title = doc.split('/')[-1].replace('.txt','')
+                # path = doc.find('collections')
 
     return render(request, 'result.html', context)
 
