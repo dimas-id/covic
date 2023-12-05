@@ -15,7 +15,7 @@ def home(request):
 def search(request):
     context = {}
 
-    return render(request, 'result.html', context)
+    return render(request, 'search_result.html', context)
 
 def detail(request, path):
     context = {}
