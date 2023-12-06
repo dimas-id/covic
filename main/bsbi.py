@@ -14,8 +14,10 @@ import re
 import nltk
 from nltk.stem.porter import *
 from nltk.corpus import stopwords
-nltk.download('stopwords')
+if not os.path.exists('main/static/data/corpora/stopwords'):
+    nltk.download('stopwords', download_dir='main/static/data', quiet=True)
 
+nltk.data.path.append('main/static/data')
 
 from operator import itemgetter
 
