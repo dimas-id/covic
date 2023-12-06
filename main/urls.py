@@ -9,4 +9,5 @@ urlpatterns = [
     path('search', search, name='search'),
     path('detail/<path:path>', detail, name='detail'),
     path('about', about, name='about'),
+    path('devs', devs, name='devs'),
 ]

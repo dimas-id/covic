@@ -90,3 +90,6 @@ def detail(request, path):
     
 def about(request):
     return render(request, 'about.html')
+
+def devs(request):
+    return render(request, 'devs.html')
