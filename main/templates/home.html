@@ -17,8 +17,8 @@ Home
         <p class="text-center">Your reliable source of information for COVID-19 related needs!</p>
     </div>
 
-    <form action="{% url 'main:search' %}" method="GET" class="w-50 d-flex align-items-center">
-        <div class="d-flex flex-row align-self-center grid gap-3 flex-fill">
+    <form action="{% url 'main:search' %}" method="GET" class="align-items-center">
+        <div class="d-flex flex-row align-self-stretch grid gap-3">
             <input type="text" class="flex-fill form-control" name="q" placeholder="Search here"
                 aria-label="Search here" aria-describedby="basic-addon2">
             <button type="submit" class="btn btn-primary">Search</button>
