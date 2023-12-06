@@ -1,9 +1,11 @@
 import os
 from django.shortcuts import render
+import lightgbm as lgb
 
 from main.bsbi import BSBIIndex
 from main.compression import VBEPostings
 from main.letor import Letor
+from main.letor_test import LetorTest
 from tqdm import tqdm
 
 from django.shortcuts import redirect
@@ -14,15 +16,22 @@ from django.core.paginator import Paginator
 BSBI_instance = BSBIIndex(data_dir='main/static/data/collections',
                           postings_encoding=VBEPostings,
                           output_dir='main/static/data/index')
+
 current_directory = os.path.dirname(os.path.abspath(__file__))
-train_docs_path = os.path.join(current_directory,"static/data/docs.txt")
-train_queries_path = os.path.join(current_directory,"static/data/queries.txt")
-train_qrels_path = os.path.join(current_directory,"static/data/qrels.txt")
+# train_docs_path = os.path.join(current_directory,"static/data/docs.txt")
+# train_queries_path = os.path.join(current_directory,"static/data/queries.txt")
+# train_qrels_path = os.path.join(current_directory,"static/data/qrels.txt")
 
-model_path = os.path.join(current_directory, 'static','model', 'ranker_model.pkl')
+# letor = Letor(train_docs_path, train_queries_path, train_qrels_path)
+# letor.load_model(model_path=model_path)
 
-letor = Letor(train_docs_path, train_queries_path, train_qrels_path)
-letor.load_model(model_path=model_path)
+lsi_model_path = os.path.join(current_directory, 'static','model', 'lsi.model')
+model_path = os.path.join(current_directory, 'static','model', 'model.txt')
+dict_path = os.path.join(current_directory, 'static','model', 'dictionary.gensim')
+
+letor = LetorTest(dict_path=dict_path, model_path=model_path, lsi_path=lsi_model_path)
+
+# rankings = letor.predict_rankings(query_to_predict, docs_to_predict)
 
 def home(request):
     return render(request, 'home.html')

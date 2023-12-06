@@ -62,6 +62,11 @@ class Letor:
         dictionary = Dictionary()
         bow_corpus = [dictionary.doc2bow(doc, allow_update=True) for doc in self.documents.values()]
         model = LsiModel(bow_corpus, num_topics=self.num_latent_topics)
+        current_directory = os.path.dirname(os.path.abspath(__file__))
+        lsi_model_path = os.path.join(current_directory, 'static','model', 'lsi.model')
+        dict_path = os.path.join(current_directory, 'static','model', 'dictionary.gensim')
+        model.save(lsi_model_path)
+        dictionary.save(dict_path)
         return dictionary, bow_corpus, model
 
     def vector_rep(self, text):
@@ -136,15 +141,19 @@ class Letor:
         # return ranker
     
     def save_model(self, model_path):
-        with open(model_path, 'wb') as file:
-            pickle.dump(self.ranker, file)
+        # with open(model_path, 'wb') as file:
+        #     pickle.dump(self.ranker, file)
+
+        self.ranker.booster_.save_model(model_path)
 
     def load_model(self, model_path):
-        with open(model_path, 'rb') as file:
-            self.ranker = pickle.load(file)
-            print('model loaded')
-            print(self.ranker)
-            return self.ranker
+        # with open(model_path, 'rb') as file:
+        #     self.ranker = pickle.load(file)
+        #     print('model loaded')
+        #     print(self.ranker)
+        #     return self.ranker
+
+        self.ranker = lgb.Booster(model_file=model_path)
 
 if __name__ == "__main__":
     # Contoh pemanggilan letor (sesuai dengan tutorial notebook letor)
@@ -157,7 +166,8 @@ if __name__ == "__main__":
     train_queries_path = os.path.join(current_directory,"static/data/queries.txt")
     train_qrels_path = os.path.join(current_directory,"static/data/qrels.txt")
 
-    model_path = os.path.join(current_directory, 'static','model', 'ranker_model.pkl')
+    # model_path = os.path.join(current_directory, 'static','model', 'ranker_model.pkl')
+    model_path = os.path.join(current_directory, 'static','model', 'model.txt')
 
     letor = Letor(train_docs_path, train_queries_path, train_qrels_path)
     ranker = letor.train_letor(save_model_path=model_path)
