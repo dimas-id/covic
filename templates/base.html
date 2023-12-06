@@ -31,11 +31,13 @@
 
             <a class="h3 link-light link-underline-opacity-0 link-underline-opacity-100-hover"
                 href="{% url 'main:home' %}">covic</a>
-            <nav class="d-flex grid gap-5">
+            <nav class="d-flex grid gap-4">
                 <a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
                     href="{% url 'main:about' %}">About</a>
                 <a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
                     href="{% url 'main:home' %}">Search</a>
+                <a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
+                    href="{% url 'main:devs' %}">The Devs</a>
             </nav>
 
         </header>
@@ -43,9 +45,9 @@
         {% block content %}
         {% endblock content %}
 
-        <footer class="d-flex flex-row px-5 py-3 align-self-stretch justify-content-between bg-dark">
+        <footer class="d-flex flex-row flex-wrap px-5 py-3 align-self-stretch justify-content-between bg-dark">
 
-            <p class="text-light">Made with 🔥🔥🔥 by
+            <p class="text-light" href="{% url 'main:devs' %}">Made with 🔥🔥🔥 by
                 <a class="fw-bold link-light link-underline-opacity-0 link-underline-opacity-100-hover"
                     href="https://www.linkedin.com/in/dimas-id/">Dimas</a>
                 and <a class="fw-bold link-light link-underline-opacity-0 link-underline-opacity-100-hover"

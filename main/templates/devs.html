@@ -10,31 +10,36 @@ covic Developers!
 {% endblock title %}
 
 {% block content %}
-<div
-    class="d-flex flex-column flex-fill p-5 align-self-stretch align-items-center justify-content-center bg-light grid gap-3">
-    <h1>COVID-19 Information Center</h1>
-    <div class="w-50">
-        <p>COVID-19 Information Center, or could be called as <span class="fw-bold">covic</span>
-            is a COVID-specialized search engine that could help you to solve your COVID-related problems!
-            <span class="fw-bold">covic</span> is here to help you answer your COVID-related questions! ♥♥
-        </p>
-        <p><span class="fw-bold">covic</span> was based on the
-            <a class="fw-bold link-dark link-underline-opacity-0 link-underline-opacity-100-hover"
-                href="https://ir.nist.gov/covidSubmit/index.html">COVID-19 Open Research Dataset (CORD-19)</a>,
-            a collection of biomedical literature articles, related to COVID-19 informations, that is updated regularly.
-            <a class="fw-bold link-dark link-underline-opacity-0 link-underline-opacity-100-hover"
-                href="https://ir.nist.gov/covidSubmit/index.html">CORD-19</a> was created based on TREC (Text Retrieval
-            Conference) model that is mainly focused to evaluate search algorithms and systems for helping scientists,
-            clinicians, policy
-            makers, and others manage the existing and rapidly growing corpus of scientific literature related to
-            COVID-19.
-        </p>
-        <p>With the help of the provided <a
-                class="fw-bold link-dark link-underline-opacity-0 link-underline-opacity-100-hover"
-                href="https://ir.nist.gov/covidSubmit/index.html">CORD-19</a> dataset,
-            <span class="fw-bold">covic</span> aims to help people get their solutions for any of their COVID-related
-            problems easily. Hopefully, <span class="fw-bold">covic</span> could be your COVID helper in the future ♥
-        </p>
+<div class="d-flex flex-column flex-fill p-5 align-items-center justify-content-center bg-light grid gap-3">
+    <h1>covic Developers!</h1>
+    <div class="d-flex flex-row flex-wrap flex-fill gap-3">
+
+        <div class="d-flex flex-column flex-fill align-self-center align-items-center alert alert-dark gap-2">
+            <img src="{% static 'image/dimas.png' %}" width="300" height="300" class="img-fluid rounded" alt="Dimas">
+            <p class="h5 fw-bold">Dimas Ilham Danesamarruf</p>
+            <div class="d-flex align-items-center flex-fill">
+                <ul class="list-group list-group-horizontal">
+                    <a class="list-group-item list-group-item-action list-group-item-light"
+                        href="https://www.linkedin.com/in/dimas-id/">LinkedIn</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light"
+                        href="https://github.com/dimas-id">GitHub</a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-fill align-self-center align-items-center alert alert-dark gap-2">
+            <img src="{% static 'image/rizky.jpg' %}" width="300" height="300" class="img-fluid rounded" alt="Rizky">
+            <p class="h5 fw-bold">Rizky Juniastiar</p>
+            <div class="d-flex align-items-center flex-fill">
+                <ul class="list-group list-group-horizontal">
+                    <a class="list-group-item list-group-item-action list-group-item-light"
+                        href="https://www.linkedin.com/in/rizkyjuniastiar/">LinkedIn</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light"
+                        href="https://github.com/rizkyyjun">GitHub</a>
+                </ul>
+            </div>
+        </div>
+
     </div>
 </div>
 {% endblock content %}

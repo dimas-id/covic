@@ -42,7 +42,8 @@ covic: {{query}}
 
     <div class="list-group">
         {% for result_item in result %}
-        <a href="{% url 'main:detail' result_item.2 %}" class="list-group-item list-group-item-action px-5 py-4">
+        <a href="{% url 'main:detail' result_item.2 %}"
+            class="list-group-item list-group-item-action list-group-item-light px-5 py-4">
             <div class="d-flex flex-column w-100">
                 <h4 class="mb-1 fw-bold">Document {{result_item.0}}</h5>
                     <p class="h5 fw-normal mb-1">{{result_item.1}}</p>
