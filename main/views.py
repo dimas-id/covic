@@ -14,6 +14,15 @@ from django.core.paginator import Paginator
 BSBI_instance = BSBIIndex(data_dir='main/static/data/collections',
                           postings_encoding=VBEPostings,
                           output_dir='main/static/data/index')
+current_directory = os.path.dirname(os.path.abspath(__file__))
+train_docs_path = os.path.join(current_directory,"static/data/docs.txt")
+train_queries_path = os.path.join(current_directory,"static/data/queries.txt")
+train_qrels_path = os.path.join(current_directory,"static/data/qrels.txt")
+
+model_path = os.path.join(current_directory, 'static','model', 'ranker_model.pkl')
+
+letor = Letor(train_docs_path, train_queries_path, train_qrels_path)
+letor.load_model(model_path=model_path)
 
 def home(request):
     return render(request, 'home.html')
@@ -42,16 +51,7 @@ def search(request):
             
             rankings_bm25_letor = []
             queries_bm25 = query
-            current_directory = os.path.dirname(os.path.abspath(__file__))
-            train_docs_path = os.path.join(current_directory,"static/data/docs.txt")
-            train_queries_path = os.path.join(current_directory,"static/data/queries.txt")
-            train_qrels_path = os.path.join(current_directory,"static/data/qrels.txt")
             
-            model_path = os.path.join(current_directory, 'static','model', 'ranker_model.pkl')
-
-            letor = Letor(train_docs_path, train_queries_path, train_qrels_path)
-            letor.load_model(model_path=model_path)
-
             if len(docs_bm25) != 0:
                 rankings_bm25_letor = letor.predict_rankings(queries_bm25, docs_bm25)
 
